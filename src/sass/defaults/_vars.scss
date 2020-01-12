@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic');
+
+$font-family: 'Roboto', sans-serif;
+
+
+
+$color-black: #000;
+$color-gray: #423F3F;
+$color-gray-hover: #524f4f;
+$color-gray-active: #2a2727;
+$color-bg: #F4F9F7;
+$color-bg-black: #1C1C1C;
+$color-panel: #EEF3F1;
+$color-green: #32BB8F;
+$color-green-hover: #32D39F;
+$color-green-active: #2DA07B;
+
+$color-gradient-green: linear-gradient(-45deg, #C9F6D8 0%, #BCE2E2 100%);
+
+@mixin size($width: 100%, $height: 100%, $min-width: null, $min-height: null, $max-width: null, $max-height: null) {
+  width: $width;
+  height: $height;
+  min-width: $min-width;
+  min-height: $min-height;
+  max-width: $max-width;
+  max-height: $max-height;
+}
+
+@mixin position($position: absolute, $top:null, $right:null, $bottom: null, $left:null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin font($font-size: 18px, $font-weight: normal, $line-height: 1.4, $text-decoration:none) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-decoration: $text-decoration;
+}
+
+@mixin color ($color: $color-black) {
+  @if $color==green{
+    color: $color-green;
+  } @else {
+    color: $color;
+  }
+}
+
+@mixin transition ($time: 0.3s, $animation: all) {
+  @if $animation==all {
+    transition: $time;
+  } @else if $animation==opacity {
+    transition: $time;
+  }
+}
+
+@mixin flex ($align-items: center, $justify-content:space-between, $flex-direction: row) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
+
+@mixin bg () {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin truncate($n, $lh) {
+  @if $n == 1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: $lh;
+  } @else {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-line-clamp: $n;
+    -moz-line-clamp: $n;
+    line-clamp: $n;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    line-height: $lh;
+    height: $lh * $n;
+  }
+}
+
+
+$base : #F7F6F0;
+$darken : darken(#F7F6F0 , 30%);
+$back: darken(#F7F6F0, 40%);
+
+
+$img-dir: '../assets/img/';
+
+%background-center {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+$color-defining: #D90000;
+
+$transition-opacity: opacity 0.3s;

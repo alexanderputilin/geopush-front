@@ -1,0 +1,20 @@
+//@import '../images/avatar.png';
+
+// Config
+@import 'config/_clearfix.scss';
+@import 'config/_normalize.scss';
+@import 'config/_reset.scss';
+
+// Defaults
+@import 'defaults/_vars.scss';
+@import 'defaults/_defaults.scss';
+@import 'defaults/_typography.scss';
+
+// Layout
+@import 'layout/_layout.scss';
+@import 'layout/_page.scss';
+@import 'layout/_content.scss';
+
+// Components
+@import 'components/tabs.scss';
+@import 'components/chart-pie.scss';

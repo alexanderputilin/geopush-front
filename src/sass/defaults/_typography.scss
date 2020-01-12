@@ -1,0 +1,30 @@
+body {
+  @include font();
+  color: #000;
+}
+
+h1 {
+  @include font(32px, 700, 1.1);
+}
+
+h2 {
+  @include font(50px, 900, 1.1);
+}
+
+h3 {
+  @include font(18px, 500, 1.1);
+}
+
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: $color-green;
+  transition: 0.3s color;
+  &:hover {
+    color: $color-green-hover;
+  }
+}
+

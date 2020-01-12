@@ -1,0 +1,14 @@
+.statistic {
+  background: #FFFFFF;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 26px 26px;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__body {
+  }
+}

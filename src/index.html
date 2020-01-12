@@ -1,0 +1,177 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Ubcoin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+
+    <svg style="display: none;">
+        <symbol id="svg-logout" viewBox="0 0 20 24">
+            <path d="M17,3 C17.5522847,3 18,3.44771525 18,4 C18,4.55228475 17.5522847,5 17,5 L6,5 L6,19 L17,19 C17.5522847,19 18,19.4477153 18,20 C18,20.5522847 17.5522847,21 17,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 L17,3 Z M15.2928932,7.29289322 C15.6834175,6.90236893 16.3165825,6.90236893 16.7071068,7.29289322 L16.7071068,7.29289322 L20.7071068,11.2928932 C21.0976311,11.6834175 21.0976311,12.3165825 20.7071068,12.7071068 L20.7071068,12.7071068 L16.7071068,16.7071068 C16.3165825,17.0976311 15.6834175,17.0976311 15.2928932,16.7071068 C14.9023689,16.3165825 14.9023689,15.6834175 15.2928932,15.2928932 L15.2928932,15.2928932 L17.585,13 L10.0154738,13 C9.50263792,13 9.07996659,12.6139598 9.02220149,12.1166211 L9.01547376,12 C9.01547376,11.4477153 9.46318901,11 10.0154738,11 L10.0154738,11 L17.585,11 L15.2928932,8.70710678 C14.9324093,8.34662282 14.9046797,7.77939176 15.2097046,7.38710056 Z"></path>
+        </symbol>
+
+        <symbol id="svg-mailbox" viewBox="0 0 20 15">
+            <g fill="#FFFFFF">
+                <path d="M20,9 L20,13 C20,14.1045695 19.1045695,15 18,15 L2,15 C0.8954305,15 0,14.1045695 0,13 L0,9 L4.27924078,9 L4.82339262,10.6324555 C5.09562072,11.4491398 5.8598984,12 6.72075922,12 L13.381966,12 C14.1395101,12 14.8320364,11.5719952 15.1708204,10.8944272 L16.118034,9 L20,9 L20,9 Z"></path>
+                <path d="M0.5625,7 L3.92654389,1.01947752 C4.2807805,0.389723558 4.94714834,-9.76996262e-15 5.66969497,-9.76996262e-15 L14.330305,-9.76996262e-15 C15.0528517,-9.76996262e-15 15.7192195,0.389723558 16.0734561,1.01947752 L19.4375,7 L16.118034,7 C15.3604899,7 14.6679636,7.42800475 14.3291796,8.10557281 L13.381966,10 L6.72075922,10 L6.17660738,8.36754447 C5.90437928,7.55086019 5.1401016,7 4.27924078,7 L0.5625,7 Z" opacity="0.439999998"></path>
+            </g>
+        </symbol>
+
+    </svg>
+
+    <div class="layout">
+
+        <aside class="layout__aside">
+
+            <div class="user-panel">
+                <div class="user-panel__avatar"></div>
+                <div class="user-panel__name">Сергей Петров</div>
+                <div class="user-panel__logout">
+                    <svg width="20px" height="22px" class="user-panel__logout-icon">
+                        <use xlink:href="#svg-logout" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="main-menu">
+
+                <a href="#" class="main-menu__item is-active">
+                    <svg class="main-menu__item-icon">
+                        <use xlink:href="#svg-mailbox" />
+                    </svg>
+                    <span class="main-menu__item-text">Статистика</span>
+                </a>
+
+                <a href="#" class="main-menu__item">
+                    <svg class="main-menu__item-icon">
+                        <use xlink:href="#svg-mailbox" />
+                    </svg>
+                    <span class="main-menu__item-text">Кампании</span>
+                </a>
+
+                <a href="#" class="main-menu__item">
+                    <svg class="main-menu__item-icon">
+                        <use xlink:href="#svg-mailbox" />
+                    </svg>
+                    <span class="main-menu__item-text">Акции</span>
+                </a>
+
+                <a href="#" class="main-menu__item">
+                    <svg class="main-menu__item-icon">
+                        <use xlink:href="#svg-mailbox" />
+                    </svg>
+                    <span class="main-menu__item-text">Торговые точки</span>
+                </a>
+
+                <a href="#" class="main-menu__item">
+                    <svg class="main-menu__item-icon">
+                        <use xlink:href="#svg-mailbox" />
+                    </svg>
+                    <span class="main-menu__item-text">Партнеры</span>
+                </a>
+
+            </div>
+        </aside>
+
+        <section class="layout__body">
+            <div class="page">
+                <div class="page__header">
+                    <h1>Статистика</h1>
+                </div>
+                <div class="page__body">
+                    <div class="content">
+
+                        <div class="content__item">
+
+                            <div class="statistic">
+                                <div class="statistic__header">
+                                    <h3>Мобильные устройство (Производитель)</h3>
+                                    <div class="tabs">
+                                        <div class="tabs__item is-active">Неделя</div>
+                                        <div class="tabs__item">Месяц</div>
+                                        <div class="tabs__item">Все время</div>
+                                    </div>
+                                </div>
+
+                                <div class="statistic__body">
+                                    <div class="chart-pie">
+                                        <div class="chart-pie__legend">
+                                            <div class="chart-pie__container statistic-device-legend"></div>
+                                        </div>
+                                        <div class="chart-pie__chart">
+                                            <div class="chart-pie__container statistic-device-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="content__item">
+
+                            <div class="statistic">
+                                <div class="statistic__header">
+                                    <h3>География</h3>
+                                    <div class="tabs">
+                                        <div class="tabs__item is-active">Неделя</div>
+                                        <div class="tabs__item">Месяц</div>
+                                        <div class="tabs__item">Все время</div>
+                                    </div>
+                                </div>
+
+                                <div class="statistic__body">
+                                    <div class="chart-pie">
+                                        <div class="chart-pie__legend">
+                                            <div class="chart-pie__container statistic-local-legend"></div>
+                                        </div>
+                                        <div class="chart-pie__chart">
+                                            <div class="chart-pie__container statistic-local-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="content__item">
+
+                            <div class="statistic">
+                                <div class="statistic__header">
+                                    <h3>Пол</h3>
+                                    <div class="tabs">
+                                        <div class="tabs__item is-active">Неделя</div>
+                                        <div class="tabs__item">Месяц</div>
+                                        <div class="tabs__item">Все время</div>
+                                    </div>
+                                </div>
+
+                                <div class="statistic__body">
+                                    <div class="chart-pie">
+                                        <div class="chart-pie__legend">
+                                            <div class="chart-pie__container statistic-gender-legend"></div>
+                                        </div>
+                                        <div class="chart-pie__chart">
+                                            <div class="chart-pie__container statistic-gender-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+//@import './src/images/avatar.png';
+
+
+.user-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  &__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    //background-image: url(../images/avatar.png);
+    flex: none;
+  }
+  &__name {
+    font-size: 15px;
+    color: #fff;
+    flex-grow: 1;
+    padding: 0 16px;
+  }
+  &__logout {
+    $this: &;
+    line-height: 0;
+    &-icon {
+      fill: #ffffff;
+      opacity: 0.4;
+      transition: opacity 0.3s;
+      cursor: pointer;
+    }
+    &:hover {
+      #{$this}-icon {
+        opacity: 1;
+      }
+    }
+  }
+}
