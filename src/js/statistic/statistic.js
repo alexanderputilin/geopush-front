@@ -18,7 +18,7 @@ let deviceLegendContainer = am4core.createFromConfig({
 let deviceChart = am4core.createFromConfig(getPropertiesChartPie(deviceLegendContainer,{ value:'Numbers', category: 'device'}),
     'statistic-device-chart', am4charts.PieChart);
 
-deviceChart.data = getDataChart({type:'device',time:'month'});
+deviceChart.data = getDataChart({type:'device',time:'week'});
 
 let deviceBtnGroup = new BtnGroup({
     'elementHTML' : '#deviceBtnGroup',
@@ -46,7 +46,7 @@ let localLegendContainer = am4core.createFromConfig({
 let localChart = am4core.createFromConfig(getPropertiesChartPie(localLegendContainer,{ value:'Numbers', category: 'city'}),
     'statistic-local-chart', am4charts.PieChart);
 
-localChart.data = getDataChart({type:'local',time:'month'});
+localChart.data = getDataChart({type:'local',time:'week'});
 
 let localBtnGroup = new BtnGroup({
     'elementHTML' : '#localBtnGroup',
@@ -89,7 +89,7 @@ let genderLegendContainer = am4core.createFromConfig({
 let genderChart = am4core.createFromConfig(getPropertiesChartPie(genderLegendContainer,{ value:'Numbers', category: 'gender'}),
     'statistic-gender-chart', am4charts.PieChart);
 
-genderChart.data = getDataChart({type:'gender',time:'month'});
+genderChart.data = getDataChart({type:'gender',time:'week'});
 
 let genderBtnGroup = new BtnGroup({
     'elementHTML' : '#genderBtnGroup',
