@@ -1,0 +1,19 @@
+.login {
+  width: 320px;
+  &__header {
+    padding: 20px 0;
+    text-align: center;
+  }
+  &__logo {
+    padding: 20px;
+    display: flex;
+    &-svg {
+      margin: auto;
+    }
+  }
+}
+
+.login-btn {
+  margin-top: 16px;
+  width: 100%;
+}

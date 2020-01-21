@@ -1,0 +1,21 @@
+.btn {
+  transition: all 0.1s ease-in-out;
+  appearance: none;
+  outline: 0;
+  outline-offset: 0;
+  border: 0;
+  cursor: pointer;
+  background: #2A2836;
+  border-radius: 4px;
+  padding: 14px 20px;
+  color: #fff;
+  @include font(16px, 400, 1);
+  display: inline-block;
+  &:hover {
+    background: #433f4f;
+  }
+  &:active {
+    background: #0b0a11;
+
+  }
+}

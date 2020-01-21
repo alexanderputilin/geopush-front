@@ -1,6 +1,10 @@
 import './user-panel.scss';
 import img from './../../images/avatar.png';
+import {hasClass} from "../has-class/has-class";
 
-let avatar = document.getElementsByClassName('user-panel__avatar')[0];
+if (hasClass('.is-page-statistic')) {
+    let avatar = document.getElementsByClassName('user-panel__avatar')[0];
 
-avatar.style.backgroundImage = `url('${img}')`;
+    avatar.style.backgroundImage = `url('${img}')`;
+}
+

@@ -6,3 +6,5 @@ import './../sass/style.scss';
 import './user-panel/user-panel';
 import './main-menu/main-menu';
 import './statistic/statistic';
+
+import './login/login';
