@@ -32,10 +32,8 @@ export function getPropertiesChartPie(legend, fuelds) {
         'legend': {
             'parent': legend,
             'position' : 'left',
-            //'valign' : 'top',
             'useDefaultMarker': true,
             'fontSize' : 16,
-            'width' : 380,
             'minWidth' : 380,
             'marginBottom' : 0,
             'marginLeft' : 0,
