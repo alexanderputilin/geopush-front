@@ -58,3 +58,14 @@
     @include font(22px, 700, 1);
   }
 }
+
+.form-page-aside-btn {
+  margin-top: 10px;
+  &>* {
+    width: 100%;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

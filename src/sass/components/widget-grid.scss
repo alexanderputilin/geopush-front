@@ -1,4 +1,6 @@
-$widget-grid-is-partners: 2fr 1.8fr 1.5fr;
+$widget-grid-is-partners: 1.5fr 1.8fr;
+$widget-grid-is-stocks: 2fr 1.3fr 1.3fr 1fr;
+$widget-grid-is-shops: 1.5fr 1.8fr;
 
 
 .widget-grid {
@@ -13,6 +15,12 @@ $widget-grid-is-partners: 2fr 1.8fr 1.5fr;
   .is-partners {
     grid-template-columns: $widget-grid-is-partners;
   }
+  .is-stocks {
+    grid-template-columns: $widget-grid-is-stocks;
+  }
+  .is-shops {
+    grid-template-columns: $widget-grid-is-shops;
+  }
 }
 
 
@@ -23,16 +31,21 @@ $widget-grid-is-partners: 2fr 1.8fr 1.5fr;
   border: 1px solid #eaeaea;
   border-radius: 8px;
   padding: 20px;
-  font-size: 13px;
+  @include font(15px, 400, 1);
+  color: $color-black;
   height: 80px;
   margin-bottom: 14px;
   transition: 0.3s;
   cursor: pointer;
+  p {
+    margin: 0;
+  }
   &:hover {
     border: 1px solid #d8d8d8;
+    color: $color-black;
   }
-  &__title {
-    font-size: 15px;
+  &__statistic {
+    font-size: 13px;
   }
 
   &__description {
@@ -46,12 +59,20 @@ $widget-grid-is-partners: 2fr 1.8fr 1.5fr;
     text-overflow: ellipsis;
     display: -webkit-box;
     line-height: 16px;
-    max-height: 32px;
-    -webkit-line-clamp: 2;
+    max-height: 48px;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
 
   .is-partners {
     grid-template-columns: $widget-grid-is-partners;
+  }
+
+  .is-stocks {
+    grid-template-columns: $widget-grid-is-stocks;
+  }
+
+  .is-shops {
+    grid-template-columns: $widget-grid-is-shops;
   }
 }
