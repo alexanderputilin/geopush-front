@@ -2,7 +2,7 @@ export function getPropertiesChartPie(legend, fuelds) {
     return {
         'series': [{
             'type': 'PieSeries',
-            'innerRadius': '50%',
+            'innerRadius': '70%',
             'ticks': {
                 'disabled': true
             },
@@ -22,7 +22,7 @@ export function getPropertiesChartPie(legend, fuelds) {
                 'type': 'Label',
                 'forceCreate': true,
                 'textAlign' : 'middle',
-                'text': '[font-size:13px]Всего: [/]\n[bold font-size:18px]{values.value.sum}[/]',
+                'text': '[font-size:15px]Всего: [/]\n[bold font-size:28px]{values.value.sum}[/]',
                 'horizontalCenter': 'middle',
                 'verticalCenter': 'middle',
                 'fontSize': 40

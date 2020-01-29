@@ -3,6 +3,7 @@
   border: 1px solid #eaeaea;
   border-radius: 8px;
   padding: 26px 26px;
+  position: relative;
 
   &__item {
     margin-bottom: 30px;
@@ -24,4 +25,36 @@
     max-width: 400px;
   }
 
+}
+
+.form-page-col {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 60px;
+}
+
+.form-page-aside {
+  position: sticky;
+  top: 26px;
+  min-height: 200px;
+  background: #f4f5f7;
+  border-radius: 6px;
+  padding: 20px 30px;
+  &__header {
+    @include font(20px, 500, 1);
+    padding: 10px 0;
+  }
+}
+
+.form-page-aside-item {
+  padding: 10px 0;
+  &__title {
+    @include font(13px, 400, 1);
+    margin-bottom: 6px;
+    opacity: 0.6;
+  }
+
+  &__value {
+    @include font(22px, 700, 1);
+  }
 }
