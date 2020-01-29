@@ -66,7 +66,6 @@ export function getPropertiesChartPie(legend, fuelds) {
                     'height': 18
                 }]
             },
-            'periodValueText': 'Selection total: [[value.sum]]'
         }
 
     }

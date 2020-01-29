@@ -10,7 +10,7 @@ import { hasClass } from './../has-class/has-class';
 if (hasClass('.is-page-statistic')) {
 
     am4core.useTheme(am4themes_animated);
-    am4core.options.autoSetClassName = true;
+   // am4core.options.autoSetClassName = true;
 
 
 
