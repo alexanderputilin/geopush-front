@@ -1,5 +1,7 @@
 import 'babel-polyfill';
 import _ from 'lodash';
+import 'jquery';
+//import 'bootstrap';
 
 import './../sass/style.scss';
 

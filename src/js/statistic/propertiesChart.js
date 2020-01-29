@@ -17,7 +17,17 @@ export function getPropertiesChartPie(legend, fuelds) {
                 'value': fuelds['value'],
                 'category': fuelds['category']
 
-            }
+            },
+            'children': [{
+                'type': 'Label',
+                'forceCreate': true,
+                'textAlign' : 'middle',
+                'text': '[font-size:13px]Всего: [/]\n[bold font-size:18px]{values.value.sum}[/]',
+                'horizontalCenter': 'middle',
+                'verticalCenter': 'middle',
+                'fontSize': 40
+            }]
+
         }],
         'legend': {
             'parent': legend,
@@ -25,6 +35,7 @@ export function getPropertiesChartPie(legend, fuelds) {
             //'valign' : 'top',
             'useDefaultMarker': true,
             'fontSize' : 16,
+            'width' : 380,
             'minWidth' : 380,
             'marginBottom' : 0,
             'marginLeft' : 0,
@@ -32,11 +43,18 @@ export function getPropertiesChartPie(legend, fuelds) {
             'marginTop' : 0,
             'valueLabels' : {
                 'fontWeight' : 500,
+                'align' : 'right',
+                'textAlign' : 'end',
+                'text': '[bold]{value}[/]',
             },
             'itemContainers' : {
                 'paddingTop' : 5,
                 'paddingBottom' : 5
             },
+            'labels': {
+
+            },
+
             'markers': {
                 'children': [{
                     'cornerRadiusTopLeft': 12,
@@ -49,7 +67,8 @@ export function getPropertiesChartPie(legend, fuelds) {
                     'width': 18,
                     'height': 18
                 }]
-            }
+            },
+            'periodValueText': 'Selection total: [[value.sum]]'
         }
 
     }

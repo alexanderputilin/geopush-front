@@ -1,0 +1,27 @@
+.form-page {
+  background: #FFFFFF;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 26px 26px;
+
+  &__item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+
+  &__footer {
+    margin-bottom: 4px;
+  }
+}
+
+
+.form-scoped {
+  &__header {
+    margin-bottom: 12px;
+  }
+  &__body {
+    max-width: 400px;
+  }
+
+}

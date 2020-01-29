@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>GeoPush</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body class="is-page-shops-add">
+
+    <svg style="display: none;">
+        <symbol id="svg-logout" viewBox="0 0 20 24">
+            <path d="M17,3 C17.5522847,3 18,3.44771525 18,4 C18,4.55228475 17.5522847,5 17,5 L6,5 L6,19 L17,19 C17.5522847,19 18,19.4477153 18,20 C18,20.5522847 17.5522847,21 17,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 L17,3 Z M15.2928932,7.29289322 C15.6834175,6.90236893 16.3165825,6.90236893 16.7071068,7.29289322 L16.7071068,7.29289322 L20.7071068,11.2928932 C21.0976311,11.6834175 21.0976311,12.3165825 20.7071068,12.7071068 L20.7071068,12.7071068 L16.7071068,16.7071068 C16.3165825,17.0976311 15.6834175,17.0976311 15.2928932,16.7071068 C14.9023689,16.3165825 14.9023689,15.6834175 15.2928932,15.2928932 L15.2928932,15.2928932 L17.585,13 L10.0154738,13 C9.50263792,13 9.07996659,12.6139598 9.02220149,12.1166211 L9.01547376,12 C9.01547376,11.4477153 9.46318901,11 10.0154738,11 L10.0154738,11 L17.585,11 L15.2928932,8.70710678 C14.9324093,8.34662282 14.9046797,7.77939176 15.2097046,7.38710056 Z"></path>
+        </symbol>
+
+        <symbol id="svg-mailbox" viewBox="0 0 20 15">
+            <g fill="#FFFFFF">
+                <path d="M20,9 L20,13 C20,14.1045695 19.1045695,15 18,15 L2,15 C0.8954305,15 0,14.1045695 0,13 L0,9 L4.27924078,9 L4.82339262,10.6324555 C5.09562072,11.4491398 5.8598984,12 6.72075922,12 L13.381966,12 C14.1395101,12 14.8320364,11.5719952 15.1708204,10.8944272 L16.118034,9 L20,9 L20,9 Z"></path>
+                <path d="M0.5625,7 L3.92654389,1.01947752 C4.2807805,0.389723558 4.94714834,-9.76996262e-15 5.66969497,-9.76996262e-15 L14.330305,-9.76996262e-15 C15.0528517,-9.76996262e-15 15.7192195,0.389723558 16.0734561,1.01947752 L19.4375,7 L16.118034,7 C15.3604899,7 14.6679636,7.42800475 14.3291796,8.10557281 L13.381966,10 L6.72075922,10 L6.17660738,8.36754447 C5.90437928,7.55086019 5.1401016,7 4.27924078,7 L0.5625,7 Z" opacity="0.439999998"></path>
+            </g>
+        </symbol>
+
+        <symbol id="svg-bag" viewBox="0 0 19 20">
+            <g fill="#FFFFFF">
+                <path d="M11.066585,5.85000055 L11.066585,4.68000044 C11.066585,3.38765401 10.0189312,2.34000022 8.72658475,2.34000022 C7.43423831,2.34000022 6.38658452,3.38765401 6.38658452,4.68000044 L6.38658452,5.85000055 L4.0465843,5.85000055 L4.0465843,4.68000044 C4.0465843,2.09530757 6.14189187,0 8.72658475,0 C11.3112776,0 13.4065852,2.09530757 13.4065852,4.68000044 L13.4065852,5.85000055 L11.066585,5.85000055 Z M11.066585,5.85000055 L11.066585,4.68000044 C11.066585,3.38765401 10.0189312,2.34000022 8.72658475,2.34000022 C7.43423831,2.34000022 6.38658452,3.38765401 6.38658452,4.68000044 L6.38658452,5.85000055 L4.0465843,5.85000055 L4.0465843,4.68000044 C4.0465843,2.09530757 6.14189187,0 8.72658475,0 C11.3112776,0 13.4065852,2.09530757 13.4065852,4.68000044 L13.4065852,5.85000055 L11.066585,5.85000055 Z" fill-rule="nonzero" opacity="0.439999998"></path>
+                <path d="M2.69772287,5.85000055 L14.7554466,5.85000055 C15.3273885,5.85000055 15.815501,6.26349385 15.9095276,6.82765383 L17.63247,17.165308 C17.8449304,18.4400707 16.9837643,19.6457032 15.7090017,19.8581637 C15.5818661,19.8793529 15.4531972,19.8900019 15.324308,19.8900019 L2.12886151,19.8900019 C0.836515071,19.8900019 -0.211138713,18.8423481 -0.211138713,17.5500017 C-0.211138713,17.4211124 -0.20048975,17.2924435 -0.179300492,17.165308 L1.54364187,6.82765383 C1.63766853,6.26349385 2.12578101,5.85000055 2.69772287,5.85000055 Z"></path>
+            </g>
+       </symbol>
+
+        <symbol id="svg-statistic" viewBox="0 0 20 20">
+            <g fill="#FFFFFF">
+                <path d="M11.6950569,1.24943914 C16.3382287,1.82849515 19.9311363,5.78936309 19.9311363,10.5893996 C19.9311363,15.7879452 15.7168824,20.0021992 10.5183367,20.0021992 C5.31979101,20.0021992 1.10553708,15.7879452 1.10553708,10.5893996 L1.10853708,10.8244391 L11.6949366,12.9425995 Z"></path>
+                <path d="M9.34173674,-5.3296565e-14 L9.34103993,10.118 L3.99269257e-05,8.25008808 C0.562182633,3.68687664 4.39016463,0.134679474 9.07374079,0.00374169822 L9.34173674,-5.3296565e-14 L9.34173674,-5.3296565e-14 Z" fill-rule="nonzero" opacity="0.439999998"></path>
+            </g>
+        </symbol>
+
+        <symbol id="svg-shares" viewBox="0 0 21 21">
+            <g fill="#FFFFFF">
+                <path d="M15.2808968,2.1427713 L2.23253808,15.1710921 C1.42416624,15.9782226 1.4231599,17.2878459 2.23029035,18.0962178 C2.23066468,18.0965927 2.23103916,18.0969675 2.23141378,18.0973421 C3.03916516,18.9050935 4.3487889,18.9050935 5.15654028,18.0973421 C5.15691491,18.0969675 5.15728938,18.0965927 5.15766372,18.0962178 L18.1859846,5.04785902 C18.9871504,4.24546094 18.986651,2.94566924 18.1848688,2.14388704 C17.3830866,1.34210483 16.0832949,1.34160544 15.2808968,2.1427713 Z" fill-rule="nonzero"></path>
+                <path d="M16.6026049,12.8814284 C18.656059,12.8814284 20.3199997,14.5411502 20.3199997,16.600714 C20.3199997,18.6565058 18.656059,20.3199997 16.6026049,20.3199997 C14.5491508,20.3199997 12.8814284,18.6565058 12.8814284,16.600714 C12.8814284,14.5411502 14.5491508,12.8814284 16.6026049,12.8814284 Z M3.7211765,1.91757718e-14 C5.77463061,1.91757718e-14 7.43857132,1.66349389 7.43857132,3.71928566 C7.43857132,5.77507743 5.77463061,7.43857132 3.7211765,7.43857132 C1.66772239,7.43857132 1.12798658e-15,5.77507743 1.12798658e-15,3.71928566 C1.12798658e-15,1.66349389 1.66772239,1.91757718e-14 3.7211765,1.91757718e-14 Z" opacity="0.439999998"></path>
+            </g>
+        </symbol>
+
+    </svg>
+
+    <div class="layout">
+
+        <aside class="layout__aside">
+
+            <div class="user-panel">
+                <div class="user-panel__avatar"></div>
+                <div class="user-panel__name">Сергей Петров</div>
+                <div class="user-panel__logout">
+                    <svg width="20px" height="22px" class="user-panel__logout-icon">
+                        <use xlink:href="#svg-logout" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="main-menu">
+
+                <a href="index.html" class="main-menu__item">
+                    <svg class="main-menu__item-icon">
+                        <use xlink:href="#svg-statistic" />
+                    </svg>
+                    <span class="main-menu__item-text">Статистика</span>
+                </a>
+
+                <a href="shares.html" class="main-menu__item">
+                    <svg class="main-menu__item-icon">
+                        <use xlink:href="#svg-shares" />
+                    </svg>
+                    <span class="main-menu__item-text">Акции</span>
+                </a>
+
+                <a href="shops.html" class="main-menu__item is-active">
+                    <svg class="main-menu__item-icon">
+                        <use xlink:href="#svg-bag" />
+                    </svg>
+                    <span class="main-menu__item-text">Торговые точки</span>
+                </a>
+
+                <a href="partners.html" class="main-menu__item">
+                    <svg class="main-menu__item-icon">
+                        <use xlink:href="#svg-mailbox" />
+                    </svg>
+                    <span class="main-menu__item-text">Партнеры</span>
+                </a>
+
+            </div>
+        </aside>
+
+        <section class="layout__body">
+            <div class="page">
+                <div class="page__header">
+                    <h1>Добавление торговых точек</h1>
+                </div>
+                <div class="page__body">
+                    <div class="content">
+                       <div class="content__form-page">
+                           <div class="form-page">
+
+                               <div class="form-page__item">
+
+                                   <div class="form-scoped">
+                                       <div class="form-scoped__header">
+                                           <h3>Описание</h3>
+                                       </div>
+
+                                       <div class="form-scoped__body">
+
+                                           <div class="form">
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-1" class="input-text__label">Название</label>
+                                                       <input id="input-1" type="text" class="input-text__input" placeholder="Введите название">
+                                                   </div>
+                                               </div>
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-2" class="input-text__label">Описание</label>
+                                                       <textarea id="input-2" class="input-text__textarea"></textarea>
+                                                   </div>
+                                               </div>
+
+                                           </div>
+
+                                       </div>
+                                   </div>
+
+                               </div>
+
+                               <div class="form-page__item">
+
+                                   <div class="form-scoped">
+                                       <div class="form-scoped__header">
+                                           <h3>Основная информация</h3>
+                                       </div>
+
+                                       <div class="form-scoped__body">
+
+                                           <div class="form">
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-3" class="input-text__label">Партнер</label>
+                                                       <select id="input-3" class="select">
+                                                           <option selected disabled>Выберите партнера</option>
+                                                           <option value="Чебурашка">Чебурашка</option>
+                                                           <option value="Крокодил Гена">Крокодил Гена</option>
+                                                           <option value="Шапокляк">Шапокляк</option>
+                                                       </select>
+                                                   </div>
+                                               </div>
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-4" class="input-text__label">Таймзона</label>
+                                                       <select id="input-4" class="select">
+                                                           <option selected value="UTC0">UTC0</option>
+                                                       </select>
+                                                   </div>
+                                               </div>
+
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label class="input-text__label">Часы работы (по будням)</label>
+
+                                                       <div class="input-text__collection">
+                                                           <input type="text" class="input-text__input" placeholder="Начало">
+                                                           <input type="text" class="input-text__input" placeholder="Конец">
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label class="input-text__label">Часы работы (по выходным)</label>
+
+                                                       <div class="input-text__collection">
+                                                           <input type="text" class="input-text__input" placeholder="Начало">
+                                                           <input type="text" class="input-text__input" placeholder="Конец">
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-5" class="input-text__label">КЛАДР код</label>
+                                                       <input id="input-5" type="text" class="input-text__input" placeholder="Введите КЛАДР">
+                                                   </div>
+                                               </div>
+
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-6" class="input-text__label">ФИАС код</label>
+                                                       <input id="input-6" type="text" class="input-text__input" placeholder="Введите ФИАС">
+                                                   </div>
+                                               </div>
+                                           </div>
+
+                                       </div>
+                                   </div>
+
+                               </div>
+
+                               <div class="form-page__item">
+
+                                   <div class="form-scoped">
+                                       <div class="form-scoped__header">
+                                           <h3>Адрес</h3>
+                                       </div>
+
+                                       <div class="form-scoped__body">
+
+                                           <div class="form">
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-7" class="input-text__label">Индекс</label>
+                                                       <input id="input-7" type="text" class="input-text__input" placeholder="Введите индекс">
+                                                   </div>
+                                               </div>
+
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-8" class="input-text__label">Регион</label>
+                                                       <select id="input-8" class="select">
+                                                           <option selected disabled>Выберите регион</option>
+                                                           <option value="Московский">Московский</option>
+                                                           <option value="Нижегородский">Нижегородский</option>
+                                                       </select>
+                                                   </div>
+                                               </div>
+
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-9" class="input-text__label">Город</label>
+                                                       <input id="input-9" type="text" class="input-text__input" placeholder="Введите город">
+                                                   </div>
+                                               </div>
+
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-10" class="input-text__label">Улица</label>
+                                                       <input id="input-10" type="text" class="input-text__input" placeholder="Введите улицу">
+                                                   </div>
+                                               </div>
+
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-11" class="input-text__label">Номер номер</label>
+
+                                                       <div class="input-text__collection">
+                                                           <input  id="input-11" type="text" class="input-text__input" placeholder="Начало">
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+
+                                           </div>
+
+                                       </div>
+                                   </div>
+
+                               </div>
+
+                               <div class="form-page__footer">
+
+                                   <div class="btn-collection">
+                                       <div class="btn-collection__item">
+                                           <button class="btn">Добавить</button>
+                                       </div>
+                                       <div class="btn-collection__item">
+                                           <button class="btn is-light">Отмена</button>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

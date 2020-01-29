@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 </head>
-<body class="is-page-partners">
+<body class="is-page-partners-add">
 
     <svg style="display: none;">
         <symbol id="svg-logout" viewBox="0 0 20 24">
@@ -95,43 +95,96 @@
         <section class="layout__body">
             <div class="page">
                 <div class="page__header">
-                    <h1>Партнеры</h1>
+                    <h1>Добавление партнера</h1>
                 </div>
                 <div class="page__body">
                     <div class="content">
-                        <div class="content__action">
-                            <a href="partners-add.html" class="btn">Добавить</a>
-                        </div>
-                        <div class="content__widget-grid">
-                            <div class="widget-grid">
+                       <div class="content__form-page">
+                           <div class="form-page">
 
-                                <div class="widget-grid__header is-partners">
-                                    <div>Название</div>
-                                    <div>Описание</div>
-                                    <div>Организация</div>
-                                </div>
-                                <div class="widget-grid__body">
+                               <div class="form-page__item">
 
-                                    <div class="widget-item is-partners">
-                                        <div class="widget-item__title">Название партнера</div>
-                                        <div class="widget-item__description">Описание партнера</div>
-                                        <div>УСЗН Приокского района города Нижнего Новгорода</div>
-                                    </div>
+                                   <div class="form-scoped">
+                                       <div class="form-scoped__header">
+                                           <h3>Описание</h3>
+                                       </div>
 
-                                    <div class="widget-item is-partners">
-                                        <div class="widget-item__title">Название партнера</div>
-                                        <div class="widget-item__description">Описание партнера длинное на две строки. Описание партнера длинное на две строки</div>
-                                    </div>
+                                       <div class="form-scoped__body">
 
+                                           <div class="form">
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-1" class="input-text__label">Название партнера</label>
+                                                       <input id="input-1" type="text" class="input-text__input" placeholder="Введите название">
+                                                   </div>
+                                               </div>
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-2" class="input-text__label">Описание партнера</label>
+                                                       <textarea id="input-2" class="input-text__textarea"></textarea>
+                                                   </div>
+                                               </div>
 
-                                </div>
-                            </div>
-                        </div>
+                                           </div>
+
+                                       </div>
+                                   </div>
+
+                               </div>
+
+                               <div class="form-page__item">
+
+                                   <div class="form-scoped">
+                                       <div class="form-scoped__header">
+                                           <h3>Настройки</h3>
+                                       </div>
+
+                                       <div class="form-scoped__body">
+
+                                           <div class="form">
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-3" class="input-text__label">URL пина</label>
+                                                       <input id="input-3" type="text" class="input-text__input" placeholder="Введите URL">
+                                                   </div>
+                                               </div>
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-4" class="input-text__label">URL иконки</label>
+                                                       <input id="input-4" type="text" class="input-text__input" placeholder="Введите URL">
+                                                   </div>
+                                               </div>
+                                               <div class="form__item">
+                                                   <div class="input-text">
+                                                       <label for="input-5" class="input-text__label">Организация</label>
+                                                       <input id="input-5" type="text" class="input-text__input" placeholder="Введите организацию">
+                                                   </div>
+                                               </div>
+                                           </div>
+
+                                       </div>
+                                   </div>
+
+                               </div>
+
+                               <div class="form-page__footer">
+
+                                   <div class="btn-collection">
+                                       <div class="btn-collection__item">
+                                           <button class="btn">Добавить</button>
+                                       </div>
+                                       <div class="btn-collection__item">
+                                           <button class="btn is-light">Отмена</button>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+                           </div>
+                       </div>
                     </div>
                 </div>
-
             </div>
-
         </section>
 
     </div>

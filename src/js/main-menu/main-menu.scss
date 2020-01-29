@@ -3,7 +3,11 @@
   &__item {
     text-decoration: none;
     color: #fff;
-    display: flex;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    gap: 12px;
+    grid-template-columns: 18px 1fr;
     align-items: center;
     padding: 10px 16px;
     margin: 6px 0;
@@ -18,7 +22,6 @@
       flex: none;
     }
     &-text {
-      padding-left: 16px;
       font-size: 15px;
     }
 

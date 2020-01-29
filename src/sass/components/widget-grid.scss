@@ -1,0 +1,57 @@
+$widget-grid-is-partners: 2fr 1.8fr 1.5fr;
+
+
+.widget-grid {
+  &__header {
+    display: grid;
+    font-size: 12px;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  .is-partners {
+    grid-template-columns: $widget-grid-is-partners;
+  }
+}
+
+
+.widget-item {
+  display: grid;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 13px;
+  height: 80px;
+  margin-bottom: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #d8d8d8;
+  }
+  &__title {
+    font-size: 15px;
+  }
+
+  &__description {
+
+  }
+
+  & > div {
+    align-self: center;
+    justify-self: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 32px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .is-partners {
+    grid-template-columns: $widget-grid-is-partners;
+  }
+}

@@ -1,5 +1,4 @@
-//@import '../images/avatar.png';
-
+//@import "~bootstrap/scss/bootstrap";
 // Config
 @import 'config/_clearfix.scss';
 @import 'config/_normalize.scss';
@@ -22,3 +21,5 @@
 @import 'components/button.scss';
 @import 'components/input.scss';
 @import 'components/form.scss';
+@import 'components/widget-grid';
+@import 'components/form-page';
