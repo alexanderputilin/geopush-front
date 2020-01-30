@@ -12,6 +12,8 @@ if (hasClass('.is-page-statistic')) {
     am4core.useTheme(am4themes_animated);
     am4core.options.autoSetClassName = true;
 
+
+    // Device
     let deviceLegendContainer = am4core.createFromConfig({
         'width': '100%',
         'height': '100%'
@@ -39,7 +41,7 @@ if (hasClass('.is-page-statistic')) {
 
 
 
-
+    // Local
     let localLegendContainer = am4core.createFromConfig({
         'width': '100%',
         'height': '100%'
@@ -67,6 +69,16 @@ if (hasClass('.is-page-statistic')) {
 
 
 
+    // Years
+    let yearsLegendContainer = am4core.createFromConfig({
+        'width': '100%',
+        'height': '100%'
+    }, 'statistic-years-legend', am4core.Container);
+
+    let yearsChart = am4core.createFromConfig(getPropertiesChartPie(yearsLegendContainer,{ value:'Numbers', category: 'years'}),
+        'statistic-years-chart', am4charts.PieChart);
+
+    yearsChart.data = getDataChart({type:'years',time:'week'});
 
     let yearsBtnGroup = new BtnGroup({
         'elementHTML' : '#yearsBtnGroup',
@@ -78,11 +90,14 @@ if (hasClass('.is-page-statistic')) {
         'active' : 'week'
     });
 
+    yearsBtnGroup.addEvents(function (item) {
+        yearsChart.data = getDataChart({type:'years',time:item.target.dataset.show});
+    });
 
 
 
 
-
+    // Gender
     let genderLegendContainer = am4core.createFromConfig({
         'width': '100%',
         'height': '100%'
@@ -106,6 +121,8 @@ if (hasClass('.is-page-statistic')) {
     genderBtnGroup.addEvents(function (item) {
         genderChart.data = getDataChart({type:'gender',time:item.target.dataset.show});
     });
+
+
 }
 
 

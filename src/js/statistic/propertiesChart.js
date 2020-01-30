@@ -22,7 +22,7 @@ export function getPropertiesChartPie(legend, fuelds) {
                 'type': 'Label',
                 'forceCreate': true,
                 'textAlign' : 'middle',
-                'text': '[font-size:15px]Всего: [/]\n[bold font-size:28px]{values.value.sum}[/]',
+                'text': '[font-size:15px]Всего: [/]\n[bold font-size:24px]{values.value.sum}[/]',
                 'horizontalCenter': 'middle',
                 'verticalCenter': 'middle',
                 'fontSize': 40

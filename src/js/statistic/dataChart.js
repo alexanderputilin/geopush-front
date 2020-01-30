@@ -7,66 +7,66 @@ export function getDataChart(data) {
     if (data.time === 'week') {
       return [{
         'device': 'Apple',
-        'Numbers': 501
+        'Numbers': 262460
       }, {
-        'device': 'Acer',
-        'Numbers': 301
+        'device': 'Samsung',
+        'Numbers': 35077
       }, {
-        'device': 'Alcatel',
-        'Numbers': 200
+        'device': 'Huawei',
+        'Numbers': 19890
+      }, {
+        'device': 'Xiaomi',
+        'Numbers': 9705
       }, {
         'device': 'Lenovo',
-        'Numbers': 165
-      }, {
-        'device': 'HTC',
-        'Numbers': 139
+        'Numbers': 2423
       }, {
         'device': 'Другие',
-        'Numbers': 99
+        'Numbers': 12434
       }];
     }
 
     if (data.time === 'month') {
       return [{
         'device': 'Apple',
-        'Numbers': 300
+        'Numbers': 404971
       }, {
-        'device': 'Acer',
-        'Numbers': 400
+        'device': 'Samsung',
+        'Numbers': 59604
       }, {
-        'device': 'Alcatel',
-        'Numbers': 350
+        'device': 'Huawei',
+        'Numbers': 35903
+      }, {
+        'device': 'Xiaomi',
+        'Numbers': 17104
       }, {
         'device': 'Lenovo',
-        'Numbers': 165.8
-      }, {
-        'device': 'HTC',
-        'Numbers': 100.9
+        'Numbers': 4546
       }, {
         'device': 'Другие',
-        'Numbers': 33
+        'Numbers': 29234
       }];
     }
 
     if (data.time === 'all') {
       return [{
         'device': 'Apple',
-        'Numbers': 8000
+        'Numbers': 1071051
       }, {
-        'device': 'Acer',
-        'Numbers': 3200
+        'device': 'Samsung',
+        'Numbers': 998616
       }, {
-        'device': 'Alcatel',
-        'Numbers': 2000
+        'device': 'Huawei',
+        'Numbers': 848449
+      }, {
+        'device': 'Xiaomi',
+        'Numbers': 404998
       }, {
         'device': 'Lenovo',
-        'Numbers': 2345
-      }, {
-        'device': 'HTC',
-        'Numbers': 940
+        'Numbers': 113258
       }, {
         'device': 'Другие',
-        'Numbers': 400
+        'Numbers': 439300
       }];
     }
   }
@@ -76,67 +76,76 @@ export function getDataChart(data) {
 
     if (data.time === 'week') {
       return [{
-        'city': 'Казань',
-        'Numbers': 501
-      }, {
         'city': 'Москва',
-        'Numbers': 301
+        'Numbers': 66422
       }, {
         'city': 'Санкт-Петергбург',
-        'Numbers': 201
+        'Numbers': 24725
       }, {
-        'city': 'Нижний Новгород',
-        'Numbers': 165
+        'city': 'Краснодар',
+        'Numbers': 20610
       }, {
-        'city': 'Саратов',
-        'Numbers': 139
+        'city': 'Новосибирск',
+        'Numbers': 13227
+      }, {
+        'city': 'Самара',
+        'Numbers': 11423
+      }, {
+        'city': 'Казань',
+        'Numbers': 8863
       }, {
         'city': 'Другие',
-        'Numbers': 99
+        'Numbers': 211676
       }];
     }
 
     if (data.time === 'month') {
       return [{
-        'city': 'Казань',
-        'Numbers': 893
-      }, {
         'city': 'Москва',
-        'Numbers': 432
+        'Numbers': 122551
       }, {
         'city': 'Санкт-Петергбург',
-        'Numbers': 444
+        'Numbers': 43948
       }, {
-        'city': 'Нижний Новгород',
-        'Numbers': 900
+        'city': 'Краснодар',
+        'Numbers': 41677
       }, {
-        'city': 'Саратов',
-        'Numbers': 139.9
+        'city': 'Самара',
+        'Numbers': 32876
+      }, {
+        'city': 'Новосибирск',
+        'Numbers': 22177
+      }, {
+        'city': 'Казань',
+        'Numbers': 19882
       }, {
         'city': 'Другие',
-        'Numbers': 99
+        'Numbers': 326552
       }];
     }
 
     if (data.time === 'all') {
       return [{
-        'city': 'Казань',
-        'Numbers': 501
-      }, {
         'city': 'Москва',
-        'Numbers': 301
+        'Numbers': 934272
+      }, {
+        'city': 'Самара',
+        'Numbers': 367470
       }, {
         'city': 'Санкт-Петергбург',
-        'Numbers': 201
+        'Numbers': 366067
       }, {
-        'city': 'Нижний Новгород',
-        'Numbers': 165
+        'city': 'Краснодар',
+        'Numbers': 346590
       }, {
-        'city': 'Саратов',
-        'Numbers': 139
+        'city': 'Новосибирск',
+        'Numbers': 240533
+      }, {
+        'city': 'Екатеринбург',
+        'Numbers': 188876
       }, {
         'city': 'Другие',
-        'Numbers': 99
+        'Numbers': 3133390
       }]
     }
   }
@@ -148,30 +157,30 @@ export function getDataChart(data) {
     if (data.time === 'week') {
       return [{
         'gender': 'Мужчины',
-        'Numbers': 501
+        'Numbers': 113126
       }, {
         'gender': 'Женщины',
-        'Numbers': 30
+        'Numbers': 197818
       }];
     }
 
     if (data.time === 'month') {
       return [{
         'gender': 'Мужчины',
-        'Numbers': 501
+        'Numbers': 195916
       }, {
         'gender': 'Женщины',
-        'Numbers': 301
+        'Numbers': 341969
       }];
     }
 
     if (data.time === 'all') {
       return [{
         'gender': 'Мужчины',
-        'Numbers': 501
+        'Numbers': 3048815
       }, {
         'gender': 'Женщины',
-        'Numbers': 301
+        'Numbers': 3420014
       }];
     }
   }
@@ -182,57 +191,57 @@ export function getDataChart(data) {
     if (data.time === 'week') {
       return [{
         'years': '18-24',
-        'Numbers': 501.9
+        'Numbers': 17166
       }, {
         'years': '25-34',
-        'Numbers': 301.9
+        'Numbers': 168581
       }, {
         'years': '35-44',
-        'Numbers': 201.1
+        'Numbers': 104133
       }, {
         'years': '45-55',
-        'Numbers': 165.8
+        'Numbers': 21248
       }, {
         'years': '> 55',
-        'Numbers': 139.9
+        'Numbers': 23108
       }];
     }
 
     if (data.time === 'month') {
       return [{
         'years': '18-24',
-        'Numbers': 501.9
+        'Numbers': 32673
       }, {
         'years': '25-34',
-        'Numbers': 301.9
+        'Numbers': 296481
       }, {
         'years': '35-44',
-        'Numbers': 201.1
+        'Numbers': 213632
       }, {
         'years': '45-55',
-        'Numbers': 165.8
+        'Numbers': 45852
       }, {
         'years': '> 55',
-        'Numbers': 139.9
+        'Numbers': 48963
       }];
     }
 
     if (data.time === 'all') {
       return [{
         'years': '18-24',
-        'Numbers': 501.9
+        'Numbers': 401945
       }, {
         'years': '25-34',
-        'Numbers': 301.9
+        'Numbers': 2535584
       }, {
         'years': '35-44',
-        'Numbers': 201.1
+        'Numbers': 2202637
       }, {
         'years': '45-55',
-        'Numbers': 165.8
+        'Numbers': 590699
       }, {
         'years': '> 55',
-        'Numbers': 139.9
+        'Numbers': 263313
       }];
     }
   }
