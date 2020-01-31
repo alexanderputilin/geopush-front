@@ -14,13 +14,18 @@ const config = {
     main: './src/js/index.js'
   },
   output: {
-    filename: 'bundle.js',
+    filename: isDevelopment ? 'bundle.js' : 'bundle.[hash].js',
     path: distPath
   },
   module: {
     rules: [{
       test: /\.html$/,
-      use: 'html-loader'
+      use: {
+        loader: 'html-loader',
+        options: {
+          interpolate: true
+        }
+      }
     }, {
       test: /\.js$/,
       exclude: /node_modules/,
@@ -75,7 +80,7 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name].[hash].css',
       chunkFilename: '[id].css'
     }),
     ...glob.sync('./src/*.html')

@@ -1,6 +1,6 @@
-$widget-grid-is-partners: 1.5fr 1.8fr;
-$widget-grid-is-stocks: 2fr 1.3fr 1.3fr 1fr;
-$widget-grid-is-shops: 1.5fr 1.8fr;
+$widget-grid-is-partners: 42px 1.5fr 1.8fr;
+$widget-grid-is-stocks: 42px 2fr 1.3fr 1.3fr 1fr;
+$widget-grid-is-shops: 42px 1.5fr 1.8fr;
 
 
 .widget-grid {
@@ -10,23 +10,24 @@ $widget-grid-is-shops: 1.5fr 1.8fr;
     color: #8c8c8c;
     text-transform: uppercase;
     padding: 10px 20px;
-    gap: 10px;
-  }
-  .is-partners {
-    grid-template-columns: $widget-grid-is-partners;
-  }
-  .is-stocks {
-    grid-template-columns: $widget-grid-is-stocks;
-  }
-  .is-shops {
-    grid-template-columns: $widget-grid-is-shops;
+    gap: 14px;
+
+    &.is-partners {
+      grid-template-columns: $widget-grid-is-partners;
+    }
+    &.is-stocks {
+      grid-template-columns: $widget-grid-is-stocks;
+    }
+    &.is-shops {
+      grid-template-columns: $widget-grid-is-shops;
+    }
   }
 }
 
 
 .widget-item {
   display: grid;
-  gap: 10px;
+  gap: 14px;
   background: #FFFFFF;
   border: 1px solid #eaeaea;
   border-radius: 8px;
@@ -52,6 +53,22 @@ $widget-grid-is-shops: 1.5fr 1.8fr;
 
   }
 
+  &__icon {
+    width: 42px;
+    height: 42px;
+    background: #f4f5f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-svg {
+      fill: #2b2936;
+      width: 16px;
+      height: 16px;
+      flex: none;
+    }
+  }
+
   & > div {
     align-self: center;
     justify-self: start;
@@ -64,15 +81,15 @@ $widget-grid-is-shops: 1.5fr 1.8fr;
     -webkit-box-orient: vertical;
   }
 
-  .is-partners {
+  &.is-partners {
     grid-template-columns: $widget-grid-is-partners;
   }
 
-  .is-stocks {
+  &.is-stocks {
     grid-template-columns: $widget-grid-is-stocks;
   }
 
-  .is-shops {
+  &.is-shops {
     grid-template-columns: $widget-grid-is-shops;
   }
 }
