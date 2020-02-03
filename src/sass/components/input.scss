@@ -92,3 +92,11 @@
     color: $color-black;
   }
 }
+
+.range {
+  display: block;
+  width: 100%;
+  &-value {
+    @include font(15px, 700, 1);
+  }
+}

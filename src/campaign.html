@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=1400">
 </head>
-<body class="is-page-stocks">
+<body class="is-page-campaign">
 
     ${require('./html/svg.html')}
 
@@ -34,14 +34,14 @@
                     <span class="main-menu__item-text">Статистика</span>
                 </a>
 
-                <a href="campaign.html" class="main-menu__item">
+                <a href="campaign.html" class="main-menu__item is-active">
                     <svg class="main-menu__item-icon">
                         <use xlink:href="#svg-campaign" />
                     </svg>
                     <span class="main-menu__item-text">Кампании</span>
                 </a>
 
-                <a href="stocks.html" class="main-menu__item is-active">
+                <a href="stocks.html" class="main-menu__item">
                     <svg class="main-menu__item-icon">
                         <use xlink:href="#svg-shares" />
                     </svg>
@@ -69,12 +69,12 @@
         <section class="layout__body">
             <div class="page">
                 <div class="page__header">
-                    <h1>Акции</h1>
+                    <h1>Кампании</h1>
                 </div>
                 <div class="page__body">
                     <div class="content">
                         <div class="content__action">
-                            <a href="stocks-add.html" class="btn">Добавить</a>
+                            <a href="campaign-add.html" class="btn">Добавить</a>
                         </div>
                         <div class="content__widget-grid">
                             <div class="widget-grid">
@@ -88,13 +88,13 @@
                                 </div>
                                 <div class="widget-grid__body">
 
-                                    <a href="stocks-edit.html" class="widget-item is-stocks">
+                                    <a href="campaign-edit.html" class="widget-item is-stocks">
                                         <div class="widget-item__icon">
                                             <svg class="widget-item__icon-svg">
-                                                <use xlink:href="#svg-shares" />
+                                                <use xlink:href="#svg-campaign" />
                                             </svg>
                                         </div>
-                                        <div class="widget-item__title">Название партнера</div>
+                                        <div class="widget-item__title">Название кампании</div>
                                         <div class="widget-item__statistic">
                                             <p>Старт – 24.12</p>
                                             <p>Финиш – 31.12</p>
@@ -110,27 +110,6 @@
                                         </div>
                                     </a>
 
-                                    <a href="#" class="widget-item is-stocks">
-                                        <div class="widget-item__icon">
-                                            <svg class="widget-item__icon-svg">
-                                                <use xlink:href="#svg-shares" />
-                                            </svg>
-                                        </div>
-                                        <div class="widget-item__title">Название партнера</div>
-                                        <div class="widget-item__statistic">
-                                            <p>Старт – 24.12</p>
-                                            <p>Финиш – 31.12</p>
-                                            <p>30 дней</p>
-                                        </div>
-                                        <div class="widget-item__statistic">
-                                            <p>Отправлено: 321</p>
-                                            <p>Доставлено: 124</p>
-                                            <p>Открыто: 47</p>
-                                        </div>
-                                        <div>
-                                            <div class="widget-status">В работе</div>
-                                        </div>
-                                    </a>
 
                                 </div>
                             </div>

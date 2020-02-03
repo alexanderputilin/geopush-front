@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>GeoPush</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1400">
+</head>
+<body class="is-page-campaign-add">
+
+    ${require('./html/svg.html')}
+
+    <div class="layout">
+
+    <aside class="layout__aside">
+
+        <div class="user-panel">
+            <div class="user-panel__avatar"></div>
+            <div class="user-panel__name">Сергей Петров</div>
+            <div class="user-panel__logout">
+                <svg width="20px" height="22px" class="user-panel__logout-icon">
+                    <use xlink:href="#svg-logout" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="main-menu">
+
+            <a href="index.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-statistic" />
+                </svg>
+                <span class="main-menu__item-text">Статистика</span>
+            </a>
+
+            <a href="campaign.html" class="main-menu__item is-active">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-campaign" />
+                </svg>
+                <span class="main-menu__item-text">Кампании</span>
+            </a>
+
+            <a href="stocks.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-shares" />
+                </svg>
+                <span class="main-menu__item-text">Акции</span>
+            </a>
+
+            <a href="shops.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-bag" />
+                </svg>
+                <span class="main-menu__item-text">Торговые точки</span>
+            </a>
+
+            <a href="partners.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-mailbox" />
+                </svg>
+                <span class="main-menu__item-text">Партнеры</span>
+            </a>
+
+        </div>
+    </aside>
+
+    <section class="layout__body">
+        <div class="page">
+            <div class="page__header">
+                <h1>Добавление кампании</h1>
+            </div>
+            <div class="page__body">
+                <div class="content">
+                    <div class="content__form-page">
+                        <div class="form-page">
+
+                            <div class="form-page-col">
+                                <div>
+                                    <div class="form-page__item">
+
+                                        <div class="form-scoped">
+                                            <div class="form-scoped__header">
+                                                <h3>Описание</h3>
+                                            </div>
+
+                                            <div class="form-scoped__body">
+
+                                                <div class="form">
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-1" class="input-text__label">Название</label>
+                                                            <input id="input-1" type="text" class="input-text__input" placeholder="Введите название">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-page__item">
+
+                                        <div class="form-scoped">
+                                            <div class="form-scoped__header">
+                                                <h3>Настройка аудитории</h3>
+                                            </div>
+
+                                            <div class="form-scoped__body">
+
+                                                <div class="form">
+
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="input-2" checked>
+                                                            <label for="input-2" class="checkbox__label">Мужчины</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="input-3" checked>
+                                                            <label for="input-3" class="checkbox__label">Женщины</label>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <!-- Здесь должен быть мультиселект -->
+                                                            <label for="input-4" class="select__label">Возрастной сегмент</label>
+                                                            <select id="input-4" class="select__el">
+                                                                <option selected disabled>Выберите сегмент</option>
+                                                                <option value="Чебурашка">Чебурашка</option>
+                                                                <option value="Крокодил Гена">Крокодил Гена</option>
+                                                                <option value="Шапокляк">Шапокляк</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <!-- Здесь должен быть мультиселект -->
+                                                            <label for="input-5" class="select__label">Город</label>
+
+                                                            <select id="input-5" class="select__el">
+                                                                <option selected disabled>Выберите город</option>
+                                                                <option value="Чебурашка">Чебурашка</option>
+                                                                <option value="Крокодил Гена">Крокодил Гена</option>
+                                                                <option value="Шапокляк">Шапокляк</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <!-- Здесь должен быть мультиселект -->
+                                                            <label for="input-6" class="select__label">Устройства</label>
+
+                                                            <select id="input-6" class="select__el">
+                                                                <option selected disabled>Выберите устройства</option>
+                                                                <option value="Чебурашка">Чебурашка</option>
+                                                                <option value="Крокодил Гена">Крокодил Гена</option>
+                                                                <option value="Шапокляк">Шапокляк</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <!-- Здесь должен быть мультиселект -->
+                                                            <label for="input-7" class="select__label">Категории покупок (МСС)</label>
+
+                                                            <select id="input-7" class="select__el">
+                                                                <option selected disabled>Выберите категорию</option>
+                                                                <option value="Чебурашка">Чебурашка</option>
+                                                                <option value="Крокодил Гена">Крокодил Гена</option>
+                                                                <option value="Шапокляк">Шапокляк</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-8" class="input-text__label">Импорт аудитории</label>
+                                                            <input id="input-8" type="file" class="input-text__input">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-page__item">
+
+                                        <div class="form-scoped">
+                                            <div class="form-scoped__header">
+                                                <h3>Push сообщение</h3>
+                                            </div>
+
+                                            <div class="form-scoped__body">
+
+                                                <div class="form">
+
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-9" class="input-text__label">Заголовок push-уведомления</label>
+                                                            <input id="input-9" type="text" class="input-text__input" placeholder="Введите Заголовок">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <label for="input-10" class="select__label">Тип push-уведомления</label>
+                                                            <select id="input-10" class="select__el">
+                                                                <option selected disabled>Выберите тип</option>
+                                                                <option value="Московский">Московский</option>
+                                                                <option value="Нижегородский">Нижегородский</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-11" class="input-text__label">Текст уведомления</label>
+                                                            <input id="input-11" type="text" class="input-text__input" placeholder="Введите текст">
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-12" class="input-text__label">URL изображения</label>
+                                                            <input id="input-12" type="text" class="input-text__input" placeholder="Введите URL">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-13" class="input-text__label">Ссылка на уведомление UNK</label>
+                                                            <input id="input-13" type="text" class="input-text__input" placeholder="Введите ссылку">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="input-14" checked>
+                                                            <label for="input-14" class="checkbox__label">UTM-метки</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-page__item">
+
+                                        <div class="form-scoped">
+                                            <div class="form-scoped__header">
+                                                <h3>Настройка рассылки</h3>
+                                            </div>
+
+                                            <div class="form-scoped__body">
+
+                                                <div class="form">
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <label for="input-15" class="select__label">Переодичность отправки</label>
+                                                            <select id="input-15" class="select__el">
+                                                                <option selected disabled>Выберите период</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <label for="input-16" class="select__label">Время отправки</label>
+                                                            <select id="input-16" class="select__el">
+                                                                <option selected disabled>Выберите время</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <!-- Здесь должен быть мультиселект -->
+                                                            <label for="input-17" class="select__label">Партнер</label>
+
+                                                            <select id="input-17" class="select__el">
+                                                                <option selected disabled>Выберите партнера</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="input-18" checked>
+                                                            <label for="input-18" class="checkbox__label">Geopush</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <label for="radiusInputId" class="select__label">Радиус</label>
+                                                            <input type="range" class="range" name="radiusInputName" id="radiusInputId" value="5" min="1" max="10" oninput="radiusOutputId.value = radiusInputId.value">
+                                                            <output name="radiusOutputName" id="radiusOutputId" class="range-value">5</output>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <label for="input-20" class="select__label">Время нахождения в радиусе</label>
+                                                            <select id="input-20" class="select__el">
+                                                                <option selected disabled>Выберите время</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <label for="input-21" class="select__label">Акция</label>
+                                                            <select id="input-21" class="select__el">
+                                                                <option selected disabled>Выберите акцию</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-page__item">
+
+                                        <div class="form-scoped">
+                                            <div class="form-scoped__header">
+                                                <h3>Запуск кампании</h3>
+                                            </div>
+
+                                            <div class="form-scoped__body">
+
+                                                <div class="form">
+
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="radio" id="input-22" name="run-campaign" value="run">
+                                                            <label for="input-22" class="checkbox__label">Запустить кампанию сейчас</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="radio" id="input-23" name="run-campaign" value="runtime" checked>
+                                                            <label for="input-23" class="checkbox__label">Запустить кампанию позже</label>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-24" class="input-text__label">Период компании</label>
+                                                            <input id="input-24" type="text" class="input-text__input" placeholder="Укажите период">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-page__footer">
+
+                                        <div class="btn-collection">
+                                            <div class="btn-collection__item">
+                                                <button class="btn">Добавить</button>
+                                            </div>
+                                            <div class="btn-collection__item">
+                                                <button class="btn is-light">Отмена</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-page-aside">
+                                        <div class="form-page-aside__header">
+                                            Прогнозы
+                                        </div>
+                                        <div class="form-page-aside-item">
+                                            <div class="form-page-aside-item__title">Размер аудитории</div>
+                                            <div class="form-page-aside-item__value">1 928 319</div>
+                                        </div>
+
+                                        <div class="form-page-aside-item">
+                                            <div class="form-page-aside-item__title">Устройства Android</div>
+                                            <div class="form-page-aside-item__value">4 433 319</div>
+                                        </div>
+
+                                        <div class="form-page-aside-item">
+                                            <div class="form-page-aside-item__title">Устройства iOS</div>
+                                            <div class="form-page-aside-item__value">428 319</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>
