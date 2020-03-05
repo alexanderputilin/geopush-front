@@ -1,4 +1,4 @@
-$widget-grid-is-partners: 42px 1.5fr 1.8fr;
+$widget-grid-is-partners: 42px 300px 1.8fr 100px;
 $widget-grid-is-stocks: 42px 2fr 1.3fr 1.3fr 1fr;
 $widget-grid-is-shops: 42px 1.5fr 1.8fr;
 
@@ -15,11 +15,16 @@ $widget-grid-is-shops: 42px 1.5fr 1.8fr;
     &.is-partners {
       grid-template-columns: $widget-grid-is-partners;
     }
+
     &.is-stocks {
       grid-template-columns: $widget-grid-is-stocks;
     }
+
     &.is-shops {
       grid-template-columns: $widget-grid-is-shops;
+    }
+    & > &__status{
+      justify-self: right;
     }
   }
 }
@@ -28,29 +33,38 @@ $widget-grid-is-shops: 42px 1.5fr 1.8fr;
 .widget-item {
   display: grid;
   gap: 14px;
-  background: #FFFFFF;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
-  padding: 20px;
+  padding: 8px 20px;
   @include font(15px, 400, 1);
   color: $color-black;
-  height: 80px;
-  margin-bottom: 14px;
+  height: 56px;
   transition: 0.3s;
   cursor: pointer;
+
   p {
     margin: 0;
   }
+
+  &:nth-of-type(odd) {
+    background-color: #eeeeee;
+  }
+
   &:hover {
     border: 1px solid #d8d8d8;
     color: $color-black;
   }
+
   &__statistic {
     font-size: 13px;
   }
 
   &__description {
 
+  }
+  & > &__status{
+    justify-self: right;
+  }
+  & > &__count{
+    width: 100px;
   }
 
   &__icon {
@@ -61,6 +75,7 @@ $widget-grid-is-shops: 42px 1.5fr 1.8fr;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &-svg {
       fill: #2b2936;
       width: 16px;

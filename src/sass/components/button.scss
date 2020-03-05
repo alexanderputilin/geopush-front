@@ -16,6 +16,9 @@
   &.is-light {
     background: transparent;
     color: $color-black;
+    > .btn-icon > svg {
+      fill: $color-black;
+    }
     &:hover {
       background: rgba(176, 176, 176, 0.49);
       color: $color-black;
@@ -27,29 +30,55 @@
     font-size: 13px;
   }
 
+  &.is-gray {
+    background-color: #2e2b3419;
+    color: #2e2b34;
+    &:hover {
+      background-color: #2e2b3450;
+      color: #2e2b34;
+    }
+  }
+
   &.is-border {
     border: 1px solid #000;
     background: transparent;
     color: $color-black;
+
     &:hover {
       background: #4D72FF;
       color: #fff;
       border: 1px solid transparent;
     }
   }
+
   &:hover {
     background: #5a82ff;
     color: #fff;
   }
+
   &:active {
     background: #4565e9;
     color: #fff;
+  }
+
+  > .btn-icon {
+    padding-right: 30px;
+
+    > svg {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      margin-right: 10px;
+      flex: none;
+      fill: #ffffff;
+    }
   }
 }
 
 .btn-collection {
   display: flex;
   margin: 0 -6px;
+
   &__item {
     margin: 0 6px;
   }

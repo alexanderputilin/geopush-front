@@ -31,6 +31,12 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 60px;
+  &__partners{
+    grid-template-columns: 1fr 1fr;
+  }
+  &__partners-import{
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .form-page-aside {

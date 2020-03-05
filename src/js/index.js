@@ -9,3 +9,7 @@ import './main-menu/main-menu';
 import './statistic/statistic';
 
 import './login/login';
+
+import './popup/popup';
+
+import './partners-import/partners-import';

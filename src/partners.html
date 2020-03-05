@@ -9,115 +9,259 @@
 </head>
 <body class="is-page-partners">
 
-    ${require('./html/svg.html')}
+${require('./html/svg.html')}
 
-    <div class="layout">
+<div class="layout">
 
-        <aside class="layout__aside">
+    <aside class="layout__aside">
 
-            <div class="user-panel">
-                <div class="user-panel__avatar"></div>
-                <div class="user-panel__name">Сергей Петров</div>
-                <div class="user-panel__logout">
-                    <svg width="20px" height="22px" class="user-panel__logout-icon">
-                        <use xlink:href="#svg-logout" />
-                    </svg>
-                </div>
+        <div class="user-panel">
+            <div class="user-panel__avatar"></div>
+            <div class="user-panel__name">Сергей Петров</div>
+            <div class="user-panel__logout">
+                <svg width="20px" height="22px" class="user-panel__logout-icon">
+                    <use xlink:href="#svg-logout"/>
+                </svg>
             </div>
+        </div>
 
-            <div class="main-menu">
+        <div class="main-menu">
 
-                <a href="index.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-statistic" />
-                    </svg>
-                    <span class="main-menu__item-text">Статистика</span>
-                </a>
+            <a href="index.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-statistic"/>
+                </svg>
+                <span class="main-menu__item-text">Статистика</span>
+            </a>
 
-                <a href="campaign.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-campaign" />
-                    </svg>
-                    <span class="main-menu__item-text">Кампании</span>
-                </a>
+            <a href="campaign.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-campaign"/>
+                </svg>
+                <span class="main-menu__item-text">Кампании</span>
+            </a>
 
-                <a href="stocks.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-shares" />
-                    </svg>
-                    <span class="main-menu__item-text">Акции</span>
-                </a>
+            <a href="stocks.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-shares"/>
+                </svg>
+                <span class="main-menu__item-text">Акции</span>
+            </a>
 
-                <a href="shops.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-bag" />
-                    </svg>
-                    <span class="main-menu__item-text">Торговые точки</span>
-                </a>
+            <a href="shops.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-bag"/>
+                </svg>
+                <span class="main-menu__item-text">Торговые точки</span>
+            </a>
 
-                <a href="partners.html" class="main-menu__item is-active">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-mailbox" />
-                    </svg>
-                    <span class="main-menu__item-text">Партнеры</span>
-                </a>
+            <a href="partners.html" class="main-menu__item is-active">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-mailbox"/>
+                </svg>
+                <span class="main-menu__item-text">Партнеры</span>
+            </a>
 
 
+        </div>
+    </aside>
+
+    <section class="layout__body">
+        <div class="page">
+            <div class="page__header">
+                <h1>Партнеры</h1>
             </div>
-        </aside>
+            <div class="page__body">
+                <div class="content">
+                    <div class="content__action">
+                        <button class="btn" data-toggle="modal" data-target="importModal">
+                            <span class="btn-icon">
+                                <svg>
+                                    <use xlink:href="#svg-folder"/>
+                                </svg>
+                            </span>
+                            Импорт партнеров
+                        </button>
+                        <a href="partners-add.html" class="btn is-light">Добавить</a>
+                    </div>
+                    <div class="content__widget-grid">
+                        <div class="widget-grid">
 
-        <section class="layout__body">
-            <div class="page">
-                <div class="page__header">
-                    <h1>Партнеры</h1>
-                </div>
-                <div class="page__body">
-                    <div class="content">
-                        <div class="content__action">
-                            <a href="partners-add.html" class="btn">Добавить</a>
+                            <div class="widget-grid__header is-partners">
+                                <div></div>
+                                <div>Название</div>
+                                <div>Количество магазинов</div>
+                                <div class="widget-grid__header__status">Статус</div>
+                            </div>
+                            <div class="widget-grid__body">
+
+                                <a href="partners-add.html" class="widget-item is-partners">
+                                    <div class="widget-item__icon">
+                                        <svg class="widget-item__icon-svg">
+                                            <use xlink:href="#svg-mailbox"/>
+                                        </svg>
+                                    </div>
+                                    <div class="widget-item__title">Азбука вкуса</div>
+                                    <div class="widget-item__count">10</div>
+
+                                    <div class="widget-item__status"><span class="btn is-mini is-gray">Активен</span>
+                                    </div>
+                                </a>
+
+                                <a href="partners-add.html" class="widget-item is-partners">
+                                    <div class="widget-item__icon">
+                                        <svg class="widget-item__icon-svg">
+                                            <use xlink:href="#svg-mailbox"/>
+                                        </svg>
+                                    </div>
+                                    <div class="widget-item__title">Вкусвилл</div>
+                                    <div class="widget-item__count">10</div>
+                                    <div class="widget-item__status"><span class="btn is-mini is-gray">Не активен</span>
+                                    </div>
+                                </a>
+                                <a href="partners-add.html" class="widget-item is-partners">
+                                    <div class="widget-item__icon">
+                                        <svg class="widget-item__icon-svg">
+                                            <use xlink:href="#svg-mailbox"/>
+                                        </svg>
+                                    </div>
+                                    <div class="widget-item__title">OneTwoTrip</div>
+                                    <div class="widget-item__count">10</div>
+                                    <div class="widget-item__status"><span class="btn is-mini is-gray">Активен</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="content__widget-grid">
-                            <div class="widget-grid">
+                    </div>
+                </div>
+            </div>
 
-                                <div class="widget-grid__header is-partners">
-                                    <div></div>
-                                    <div>Название</div>
-                                    <div>Организация</div>
+        </div>
+
+    </section>
+
+</div>
+<div class="popup partners-import " id="importModal">
+    <div class="popup__content">
+        <div class="popup__close">
+            <a href="#" data-toggle="modal" data-target="importModal">
+                <svg>
+                    <use xlink:href="#svg-close"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="form-page-col form-page-col__partners-import">
+            <div>
+                <div class="page__header">
+                    <h2>Импорт партнеров</h2>
+                </div>
+                <div class="form-scoped">
+                    <div class="form-scoped__header">
+                        <h3>Категории</h3>
+                    </div>
+                    <div class="form-scoped__body">
+
+                        <div class="form">
+                            <div class="form__item">
+                                <div class="radio partners-import__radio">
+                                    <input type="radio" name="rb-import" value="0" id="input-1" checked>
+                                    <label for="input-1" class="checkbox__label">Импортировать всю базу</label>
                                 </div>
-                                <div class="widget-grid__body">
-
-                                    <a href="#" class="widget-item is-partners">
-                                        <div class="widget-item__icon">
-                                            <svg class="widget-item__icon-svg">
-                                                <use xlink:href="#svg-mailbox" />
-                                            </svg>
-                                        </div>
-                                        <div class="widget-item__title">Название партнера</div>
-                                        <div>УСЗН Приокского района города Нижнего Новгорода</div>
-                                    </a>
-
-                                    <a href="#" class="widget-item is-partners">
-                                        <div class="widget-item__icon">
-                                            <svg class="widget-item__icon-svg">
-                                                <use xlink:href="#svg-mailbox" />
-                                            </svg>
-                                        </div>
-                                        <div class="widget-item__title">Название партнера</div>
-                                        <div>УСЗН Приокского района города Нижнего Новгорода</div>
-
-                                    </a>
-
-
+                                <div class="radio partners-import__radio">
+                                    <input type="radio" name="rb-import" value="1" id="input-2">
+                                    <label for="input-2" class="checkbox__label">Выборочный импорт</label>
+                                </div>
+                                <div class="radio partners-import__radio">
+                                    <input type="radio" name="rb-import" value="2" id="input-3">
+                                    <label for="input-3" class="checkbox__label">Продукты</label>
+                                </div>
+                                <div class="radio partners-import__radio">
+                                    <input type="radio" name="rb-import" value="2" id="input-4">
+                                    <label for="input-4" class="checkbox__label">Развлечения</label>
+                                </div>
+                                <div class="radio partners-import__radio">
+                                    <input type="radio" name="rb-import" value="2" id="input-5">
+                                    <label for="input-5" class="checkbox__label">Культура</label>
+                                </div>
+                                <div class="radio partners-import__radio">
+                                    <input type="radio" name="rb-import" value="2" id="input-6">
+                                    <label for="input-6" class="checkbox__label">Туризм</label>
+                                </div>
+                                <div class="radio partners-import__radio">
+                                    <input type="radio" name="rb-import" value="2" id="input-7">
+                                    <label for="input-7" class="checkbox__label">Красота и здоровье</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="partners-import__right-column">
+
+                <div class="partners-import__panel partners-import__panel__active"
+                     data-target="0">
+                    <div class="partners-import__panel__empty">
+                        <p>Импорт всех партнеров
+                            из базы</p>
+                    </div>
+                </div>
+                <div class="partners-import__panel" data-target="1">
+                    <div class="partners-import__search">
+                        <input placeholder="Поиск">
+                        <svg>
+                            <use xlink:href="#svg-search"/>
+                        </svg>
+                    </div>
+                    <p><h2>Результаты по запросу</h2></p>
+                    <div class="partners-import__search__header">
+                        <button class="partners-import__search__header__button">
+                            <svg>
+                                <use xlink:href="#svg-select-all"/>
+                            </svg>
+                            Выбрать все
+                        </button>
+                        <button class="partners-import__search__header__button partners-import__search__header__button__right">
+                            <svg>
+                                <use xlink:href="#svg-remove"/>
+                            </svg>
+                            Удалить все
+                        </button>
+                    </div>
+
+                    <div>
+
+                        <div class="form__item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="sinput-1" checked>
+                                <label for="sinput-1" class="checkbox__label">Азбука вкуса</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="sinput-2" checked>
+                                <label for="sinput-2" class="checkbox__label">Азбука вкуса</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-import__panel" data-target="2">
+                    Категория
+                </div>
 
             </div>
+        </div>
+        <div class="form-page__footer">
 
-        </section>
+            <div class="btn-collection">
+                <div class="btn-collection__item">
+                    <button class="btn">Импорт</button>
+                </div>
+                <div class="btn-collection__item">
+                    <button class="btn is-light" data-toggle="modal" data-target="importModal">Отмена</button>
+                </div>
+            </div>
 
+        </div>
     </div>
+</div>
 </body>
 </html>

@@ -9,158 +9,278 @@
 </head>
 <body class="is-page-partners-add">
 
-    ${require('./html/svg.html')}
+${require('./html/svg.html')}
 
-    <div class="layout">
+<div class="layout">
 
-        <aside class="layout__aside">
+    <aside class="layout__aside">
 
-            <div class="user-panel">
-                <div class="user-panel__avatar"></div>
-                <div class="user-panel__name">Сергей Петров</div>
-                <div class="user-panel__logout">
-                    <svg width="20px" height="22px" class="user-panel__logout-icon">
-                        <use xlink:href="#svg-logout" />
-                    </svg>
-                </div>
+        <div class="user-panel">
+            <div class="user-panel__avatar"></div>
+            <div class="user-panel__name">Сергей Петров</div>
+            <div class="user-panel__logout">
+                <svg width="20px" height="22px" class="user-panel__logout-icon">
+                    <use xlink:href="#svg-logout"/>
+                </svg>
             </div>
+        </div>
 
-            <div class="main-menu">
+        <div class="main-menu">
 
-                <a href="index.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-statistic" />
-                    </svg>
-                    <span class="main-menu__item-text">Статистика</span>
-                </a>
+            <a href="index.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-statistic"/>
+                </svg>
+                <span class="main-menu__item-text">Статистика</span>
+            </a>
 
-                <a href="campaign.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-campaign" />
-                    </svg>
-                    <span class="main-menu__item-text">Кампании</span>
-                </a>
+            <a href="campaign.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-campaign"/>
+                </svg>
+                <span class="main-menu__item-text">Кампании</span>
+            </a>
 
-                <a href="stocks.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-shares" />
-                    </svg>
-                    <span class="main-menu__item-text">Акции</span>
-                </a>
+            <a href="stocks.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-shares"/>
+                </svg>
+                <span class="main-menu__item-text">Акции</span>
+            </a>
 
-                <a href="shops.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-bag" />
-                    </svg>
-                    <span class="main-menu__item-text">Торговые точки</span>
-                </a>
+            <a href="shops.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-bag"/>
+                </svg>
+                <span class="main-menu__item-text">Торговые точки</span>
+            </a>
 
-                <a href="partners.html" class="main-menu__item is-active">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-mailbox" />
-                    </svg>
-                    <span class="main-menu__item-text">Партнеры</span>
-                </a>
+            <a href="partners.html" class="main-menu__item is-active">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-mailbox"/>
+                </svg>
+                <span class="main-menu__item-text">Партнеры</span>
+            </a>
 
 
+        </div>
+    </aside>
+
+    <section class="layout__body">
+        <div class="page">
+            <div class="page__header">
+                <h1>Добавление партнера</h1>
             </div>
-        </aside>
+            <div class="page__body">
+                <div class="content">
+                    <div class="content__form-page">
+                        <div class="form-page">
+                            <div class="form-page-col form-page-col__partners">
+                                <div>
+                                    <div class="form-page__item">
 
-        <section class="layout__body">
-            <div class="page">
-                <div class="page__header">
-                    <h1>Добавление партнера</h1>
-                </div>
-                <div class="page__body">
-                    <div class="content">
-                       <div class="content__form-page">
-                           <div class="form-page">
+                                        <div class="form-scoped">
+                                            <div class="form-scoped__header">
+                                                <h3>Импорт партнеров</h3>
+                                            </div>
 
-                               <div class="form-page__item">
+                                            <div class="form-scoped__body">
 
-                                   <div class="form-scoped">
-                                       <div class="form-scoped__header">
-                                           <h3>Описание</h3>
-                                       </div>
+                                                <div class="form">
+                                                    <div class="form__item">
+                                                        <div class="input-image">
+                                                            <p>
+                                                                Логотип партнера
+                                                            </p>
+                                                            <img src="./images/avatar.png">
+                                                            <a class="icon" href="#">
+                                                                <svg>
+                                                                    <use xlink:href="#svg-upload"/>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-1" class="input-text__label">Название
+                                                                партнера</label>
+                                                            <input id="input-1" type="text" class="input-text__input"
+                                                                   placeholder="Введите название">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-2" class="input-text__label">URL
+                                                                пин иконки</label>
+                                                            <input id="input-2" type="text" class="input-text__input"
+                                                                   placeholder="Введите URL">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-3" class="input-text__label">URL
+                                                                иконки</label>
+                                                            <input id="input-3" type="text" class="input-text__input"
+                                                                   placeholder="Введите URL">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-4"
+                                                                   class="input-text__label">Идентификатор</label>
+                                                            <input id="input-4" type="text" class="input-text__input"
+                                                                   placeholder="Введите Идентификатор">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-5"
+                                                                   class="input-text__label">Описание краткое</label>
+                                                            <input id="input-5" type="text" class="input-text__input"
+                                                                   placeholder="Введите Описание">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__item">
+                                                        <div class="input-text">
+                                                            <label for="input-6"
+                                                                   class="input-text__label">Ссылка на сайт
+                                                                компании</label>
+                                                            <input id="input-6" type="text" class="input-text__input"
+                                                                   placeholder="Введите ссылку">
+                                                        </div>
+                                                    </div>
 
-                                       <div class="form-scoped__body">
 
-                                           <div class="form">
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-1" class="input-text__label">Название партнера</label>
-                                                       <input id="input-1" type="text" class="input-text__input" placeholder="Введите название">
-                                                   </div>
-                                               </div>
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-2" class="input-text__label">Описание партнера</label>
-                                                       <textarea id="input-2" class="input-text__textarea"></textarea>
-                                                   </div>
-                                               </div>
+                                                </div>
 
-                                           </div>
+                                            </div>
+                                        </div>
 
-                                       </div>
-                                   </div>
+                                    </div>
 
-                               </div>
+                                    <div class="form-page__item">
 
-                               <div class="form-page__item">
+                                        <div class="form-scoped">
+                                            <div class="form-scoped__header">
+                                                <h3>Параметры партнера</h3>
+                                            </div>
 
-                                   <div class="form-scoped">
-                                       <div class="form-scoped__header">
-                                           <h3>Настройки</h3>
-                                       </div>
+                                            <div class="form-scoped__body">
 
-                                       <div class="form-scoped__body">
+                                                <div class="form">
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="input-7" checked>
+                                                            <label for="input-7" class="checkbox__label">Активен</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="input-8" checked>
+                                                            <label for="input-8" class="checkbox__label">Доступна
+                                                                on-line оплата</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="input-9">
+                                                            <label for="input-9" class="checkbox__label">Имеется
+                                                                интернет-магазин</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__item">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="input-10">
+                                                            <label for="input-10" class="checkbox__label">Доставка по
+                                                                всей территории РФ</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                           <div class="form">
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-3" class="input-text__label">URL пина</label>
-                                                       <input id="input-3" type="text" class="input-text__input" placeholder="Введите URL">
-                                                   </div>
-                                               </div>
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-4" class="input-text__label">URL иконки</label>
-                                                       <input id="input-4" type="text" class="input-text__input" placeholder="Введите URL">
-                                                   </div>
-                                               </div>
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-5" class="input-text__label">Организация</label>
-                                                       <input id="input-5" type="text" class="input-text__input" placeholder="Введите организацию">
-                                                   </div>
-                                               </div>
-                                           </div>
+                                            </div>
+                                        </div>
 
-                                       </div>
-                                   </div>
+                                    </div>
 
-                               </div>
+                                    <div class="form-page__item">
 
-                               <div class="form-page__footer">
+                                        <div class="form-scoped">
+                                            <div class="form-scoped__header">
+                                                <h3>Категории</h3>
+                                            </div>
 
-                                   <div class="btn-collection">
-                                       <div class="btn-collection__item">
-                                           <button class="btn">Добавить</button>
-                                       </div>
-                                       <div class="btn-collection__item">
-                                           <button class="btn is-light">Отмена</button>
-                                       </div>
-                                   </div>
+                                            <div class="form-scoped__body">
+                                                <div class="form">
+                                                    <div class="form__item">
+                                                        <div class="select">
+                                                            <label for="input-11"
+                                                                   class="select__label">Категория</label>
+                                                            <select id="input-11" class="select__el">
+                                                                <option selected disabled>Выберите из списка</option>
+                                                                <option value="Интернет-магазины">Интернет-магазины
+                                                                </option>
+                                                                <option value="Лучшие предложения">Лучшие предложения
+                                                                </option>
+                                                                <option value="Путешествия">Путешествия</option>
+                                                            </select>
+                                                            <span class="selected-item">Интернет-магазины<a href="#">
+                                                                <svg>
+                                                                <use xlink:href="#svg-close"/>
+                                                             </svg>
+                                                            </a></span>
+                                                            <span class="selected-item">Путешествия<a href="#">
+                                                                <svg>
+                                                                <use xlink:href="#svg-close"/>
+                                                             </svg>
+                                                            </a></span>
+                                                            <span class="selected-item">Лучшие предложения<a href="#">
+                                                                <svg>
+                                                                <use xlink:href="#svg-close"/>
+                                                             </svg>
+                                                            </a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                               </div>
+                                    <div class="form-page__footer">
 
-                           </div>
-                       </div>
+                                        <div class="btn-collection">
+                                            <div class="btn-collection__item">
+                                                <button class="btn">Сохранить</button>
+                                            </div>
+                                            <div class="btn-collection__item">
+                                                <button class="btn is-light">Назад</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-page-aside">
+                                        <div class="form-page-aside-item">
+                                            <div class="form-page-aside-item__title">Количество торговых точек</div>
+                                            <div class="form-page-aside-item__value">120</div>
+                                        </div>
+
+                                        <div class="form-page-aside-item">
+                                            <div class="form-page-aside-item__title">Количество городов</div>
+                                            <div class="form-page-aside-item__value">39</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </div>
+</div>
 </body>
 </html>
