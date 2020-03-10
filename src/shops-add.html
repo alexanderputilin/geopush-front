@@ -9,256 +9,225 @@
 </head>
 <body class="is-page-shops-add">
 
-    ${require('./html/svg.html')}
+${require('./html/svg.html')}
 
-    <div class="layout">
+<div class="layout">
 
-        <aside class="layout__aside">
+    <aside class="layout__aside">
 
-            <div class="user-panel">
-                <div class="user-panel__avatar"></div>
-                <div class="user-panel__name">Сергей Петров</div>
-                <div class="user-panel__logout">
-                    <svg width="20px" height="22px" class="user-panel__logout-icon">
-                        <use xlink:href="#svg-logout" />
-                    </svg>
-                </div>
+        <div class="user-panel">
+            <div class="user-panel__avatar"></div>
+            <div class="user-panel__name">Сергей Петров</div>
+            <div class="user-panel__logout">
+                <svg width="20px" height="22px" class="user-panel__logout-icon">
+                    <use xlink:href="#svg-logout"/>
+                </svg>
             </div>
+        </div>
 
-            <div class="main-menu">
+        <div class="main-menu">
 
-                <a href="index.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-statistic" />
-                    </svg>
-                    <span class="main-menu__item-text">Статистика</span>
-                </a>
+            <a href="index.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-statistic"/>
+                </svg>
+                <span class="main-menu__item-text">Статистика</span>
+            </a>
 
-                <a href="campaign.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-campaign" />
-                    </svg>
-                    <span class="main-menu__item-text">Кампании</span>
-                </a>
+            <a href="campaign.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-campaign"/>
+                </svg>
+                <span class="main-menu__item-text">Кампании</span>
+            </a>
 
-                <a href="stocks.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-shares" />
-                    </svg>
-                    <span class="main-menu__item-text">Акции</span>
-                </a>
+            <a href="stocks.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-shares"/>
+                </svg>
+                <span class="main-menu__item-text">Акции</span>
+            </a>
 
-                <a href="shops.html" class="main-menu__item is-active">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-bag" />
-                    </svg>
-                    <span class="main-menu__item-text">Торговые точки</span>
-                </a>
+            <a href="shops.html" class="main-menu__item is-active">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-bag"/>
+                </svg>
+                <span class="main-menu__item-text">Торговые точки</span>
+            </a>
 
-                <a href="partners.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-mailbox" />
-                    </svg>
-                    <span class="main-menu__item-text">Партнеры</span>
-                </a>
+            <a href="partners.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-mailbox"/>
+                </svg>
+                <span class="main-menu__item-text">Партнеры</span>
+            </a>
 
+        </div>
+    </aside>
+
+    <section class="layout__body">
+        <div class="page">
+            <div class="page__header">
+                <h1>Добавление торговых точек</h1>
             </div>
-        </aside>
+            <div class="page__body">
+                <div class="content">
+                    <div class="content__form-page">
+                        <div class="form-page">
 
-        <section class="layout__body">
-            <div class="page">
-                <div class="page__header">
-                    <h1>Добавление торговых точек</h1>
-                </div>
-                <div class="page__body">
-                    <div class="content">
-                       <div class="content__form-page">
-                           <div class="form-page">
+                            <div class="form-page__item">
 
-                               <div class="form-page__item">
+                                <div class="form-scoped">
+                                    <div class="form-scoped__header">
+                                        <h3>Настройка торговой точки</h3>
+                                    </div>
 
-                                   <div class="form-scoped">
-                                       <div class="form-scoped__header">
-                                           <h3>Описание</h3>
-                                       </div>
+                                    <div class="form-scoped__body">
 
-                                       <div class="form-scoped__body">
+                                        <div class="form">
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label for="input-1" class="input-text__label">Имя партнера</label>
+                                                    <input id="input-1" type="text" class="input-text__input"
+                                                           placeholder="Введите имя партнера"/>
+                                                </div>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label for="input-2" class="input-text__label">Название/Идентификатор
+                                                        магазина</label>
+                                                    <input id="input-2" class="input-text__input"
+                                                           placeholder="Введите Название/Идентификатор магазина"/>
+                                                </div>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label for="input-3" class="input-text__label">Идентификатор
+                                                        партнера</label>
+                                                    <input id="input-3" class="input-text__input"
+                                                           placeholder="Идентификатор партнера"/>
+                                                </div>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label for="input-4" class="input-text__label">Адрес
+                                                        магазина</label>
+                                                    <input id="input-4" class="input-text__input"
+                                                           placeholder="Адрес магазина"/>
+                                                </div>
+                                            </div>
 
-                                           <div class="form">
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-1" class="input-text__label">Название</label>
-                                                       <input id="input-1" type="text" class="input-text__input" placeholder="Введите название">
-                                                   </div>
-                                               </div>
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-2" class="input-text__label">Описание</label>
-                                                       <textarea id="input-2" class="input-text__textarea"></textarea>
-                                                   </div>
-                                               </div>
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label for="input-5" class="input-text__label">Город
+                                                        (Регион)</label>
+                                                    <input id="input-5" class="input-text__input"
+                                                           placeholder="Город (Регион)"/>
+                                                </div>
+                                            </div>
 
-                                           </div>
-
-                                       </div>
-                                   </div>
-
-                               </div>
-
-                               <div class="form-page__item">
-
-                                   <div class="form-scoped">
-                                       <div class="form-scoped__header">
-                                           <h3>Основная информация</h3>
-                                       </div>
-
-                                       <div class="form-scoped__body">
-
-                                           <div class="form">
-                                               <div class="form__item">
-                                                   <div class="select">
-                                                       <!-- Здесь должен быть мультиселект -->
-                                                       <label for="input-3" class="select__label">Партнер</label>
-                                                       <select id="input-3" class="select__el">
-                                                           <option selected disabled>Выберите партнера</option>
-                                                           <option value="Чебурашка">Чебурашка</option>
-                                                           <option value="Крокодил Гена">Крокодил Гена</option>
-                                                           <option value="Шапокляк">Шапокляк</option>
-                                                       </select>
-                                                   </div>
-                                               </div>
-                                               <div class="form__item">
-                                                   <div class="select">
-                                                       <label for="input-4" class="select__label">Таймзона</label>
-                                                       <select id="input-4" class="select__el">
-                                                           <option selected value="UTC0">UTC0</option>
-                                                       </select>
-                                                   </div>
-                                               </div>
-
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label class="input-text__label">Часы работы (по будням)</label>
-
-                                                       <div class="input-text__collection">
-                                                           <input type="text" class="input-text__input" placeholder="Начало">
-                                                           <input type="text" class="input-text__input" placeholder="Конец">
-                                                       </div>
-                                                   </div>
-                                               </div>
-
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label class="input-text__label">Часы работы (по выходным)</label>
-
-                                                       <div class="input-text__collection">
-                                                           <input type="text" class="input-text__input" placeholder="Начало">
-                                                           <input type="text" class="input-text__input" placeholder="Конец">
-                                                       </div>
-                                                   </div>
-                                               </div>
-
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-5" class="input-text__label">КЛАДР код</label>
-                                                       <input id="input-5" type="text" class="input-text__input" placeholder="Введите КЛАДР">
-                                                   </div>
-                                               </div>
-
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-6" class="input-text__label">ФИАС код</label>
-                                                       <input id="input-6" type="text" class="input-text__input" placeholder="Введите ФИАС">
-                                                   </div>
-                                               </div>
-                                           </div>
-
-                                       </div>
-                                   </div>
-
-                               </div>
-
-                               <div class="form-page__item">
-
-                                   <div class="form-scoped">
-                                       <div class="form-scoped__header">
-                                           <h3>Адрес</h3>
-                                       </div>
-
-                                       <div class="form-scoped__body">
-
-                                           <div class="form">
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-7" class="input-text__label">Индекс</label>
-                                                       <input id="input-7" type="text" class="input-text__input" placeholder="Введите индекс">
-                                                   </div>
-                                               </div>
-
-                                               <div class="form__item">
-                                                   <div class="select">
-                                                       <!-- Здесь должен быть мультиселект -->
-                                                       <label for="input-8" class="select__label">Регион</label>
-                                                       <select id="input-8" class="select__el">
-                                                           <option selected disabled>Выберите регион</option>
-                                                           <option value="Московский">Московский</option>
-                                                           <option value="Нижегородский">Нижегородский</option>
-                                                       </select>
-                                                   </div>
-                                               </div>
-
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-9" class="input-text__label">Город</label>
-                                                       <input id="input-9" type="text" class="input-text__input" placeholder="Введите город">
-                                                   </div>
-                                               </div>
-
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-10" class="input-text__label">Улица</label>
-                                                       <input id="input-10" type="text" class="input-text__input" placeholder="Введите улицу">
-                                                   </div>
-                                               </div>
-
-                                               <div class="form__item">
-                                                   <div class="input-text">
-                                                       <label for="input-11" class="input-text__label">Номер номер</label>
-
-                                                       <div class="input-text__collection">
-                                                           <input  id="input-11" type="text" class="input-text__input" placeholder="Начало">
-                                                       </div>
-                                                   </div>
-                                               </div>
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label for="input-6" class="input-text__label">Идентификатор
+                                                        КЛАДР*</label>
+                                                    <input id="input-6" class="input-text__input"
+                                                           placeholder="Идентификатор КЛАДР*"/>
+                                                </div>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label for="input-7" class="input-text__label">Идентификатор
+                                                        ФИАС*</label>
+                                                    <input id="input-7" class="input-text__input"
+                                                           placeholder="Идентификатор ФИАС*"/>
+                                                </div>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="select">
+                                                    <label for="input-8" class="select__label">Таймзона</label>
+                                                    <select id="input-8" class="select__el">
+                                                        <option selected>UTC+3</option>
+                                                        <option>UTC+4</option>
+                                                        <option>UTC+5</option>
+                                                        <option>UTC+6</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
 
-                                           </div>
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label class="input-text__label">Часы работы (по будням)</label>
 
-                                       </div>
-                                   </div>
+                                                    <div class="input-text__collection">
+                                                        <input type="text" class="input-text__input"
+                                                               placeholder="c __ __">
+                                                        <input type="text" class="input-text__input"
+                                                               placeholder="до __ __">
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                               </div>
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label class="input-text__label">Часы работы (по выходным)</label>
 
-                               <div class="form-page__footer">
+                                                    <div class="input-text__collection">
+                                                        <input type="text" class="input-text__input"
+                                                               placeholder="c __ __">
+                                                        <input type="text" class="input-text__input"
+                                                               placeholder="до __ __">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="input-text">
+                                                    <label class="input-text__label">Координаты</label>
 
-                                   <div class="btn-collection">
-                                       <div class="btn-collection__item">
-                                           <button class="btn">Добавить</button>
-                                       </div>
-                                       <div class="btn-collection__item">
-                                           <button class="btn is-light">Отмена</button>
-                                       </div>
-                                   </div>
+                                                    <div class="input-text__collection">
+                                                        <input type="text" class="input-text__input"
+                                                               placeholder="Широта">
+                                                        <input type="text" class="input-text__input"
+                                                               placeholder="Долгота">
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                               </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <div class="input-text">
+                                                <label for="input-9" class="input-text__label">Торговый центр</label>
+                                                <input id="input-9" class="input-text__input"
+                                                       placeholder="Торговый центр"/>
+                                            </div>
+                                        </div>
 
-                           </div>
-                       </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-page__footer">
+
+                                <div class="btn-collection">
+                                    <div class="btn-collection__item">
+                                        <button class="btn">Сохранить</button>
+                                    </div>
+                                    <div class="btn-collection__item">
+                                        <button class="btn is-light">Назад</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </div>
+</div>
 </body>
 </html>

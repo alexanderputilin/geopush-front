@@ -9,102 +9,134 @@
 </head>
 <body class="is-page-shops">
 
-    ${require('./html/svg.html')}
+${require('./html/svg.html')}
 
-    <div class="layout">
+<div class="layout">
 
-        <aside class="layout__aside">
+    <aside class="layout__aside">
 
-            <div class="user-panel">
-                <div class="user-panel__avatar"></div>
-                <div class="user-panel__name">Сергей Петров</div>
-                <div class="user-panel__logout">
-                    <svg width="20px" height="22px" class="user-panel__logout-icon">
-                        <use xlink:href="#svg-logout" />
-                    </svg>
-                </div>
+        <div class="user-panel">
+            <div class="user-panel__avatar"></div>
+            <div class="user-panel__name">Сергей Петров</div>
+            <div class="user-panel__logout">
+                <svg width="20px" height="22px" class="user-panel__logout-icon">
+                    <use xlink:href="#svg-logout"/>
+                </svg>
             </div>
+        </div>
 
-            <div class="main-menu">
+        <div class="main-menu">
 
-                <a href="index.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-statistic" />
-                    </svg>
-                    <span class="main-menu__item-text">Статистика</span>
-                </a>
+            <a href="index.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-statistic"/>
+                </svg>
+                <span class="main-menu__item-text">Статистика</span>
+            </a>
 
-                <a href="campaign.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-campaign" />
-                    </svg>
-                    <span class="main-menu__item-text">Кампании</span>
-                </a>
+            <a href="campaign.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-campaign"/>
+                </svg>
+                <span class="main-menu__item-text">Кампании</span>
+            </a>
 
-                <a href="stocks.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-shares" />
-                    </svg>
-                    <span class="main-menu__item-text">Акции</span>
-                </a>
+            <a href="stocks.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-shares"/>
+                </svg>
+                <span class="main-menu__item-text">Акции</span>
+            </a>
 
-                <a href="shops.html" class="main-menu__item is-active">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-bag" />
-                    </svg>
-                    <span class="main-menu__item-text">Торговые точки</span>
-                </a>
+            <a href="shops.html" class="main-menu__item is-active">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-bag"/>
+                </svg>
+                <span class="main-menu__item-text">Торговые точки</span>
+            </a>
 
-                <a href="partners.html" class="main-menu__item">
-                    <svg class="main-menu__item-icon">
-                        <use xlink:href="#svg-mailbox" />
-                    </svg>
-                    <span class="main-menu__item-text">Партнеры</span>
-                </a>
+            <a href="partners.html" class="main-menu__item">
+                <svg class="main-menu__item-icon">
+                    <use xlink:href="#svg-mailbox"/>
+                </svg>
+                <span class="main-menu__item-text">Партнеры</span>
+            </a>
 
 
+        </div>
+    </aside>
+
+    <section class="layout__body">
+        <div class="page">
+            <div class="page__header">
+                <h1>Торговые точки</h1>
             </div>
-        </aside>
-
-        <section class="layout__body">
-            <div class="page">
-                <div class="page__header">
-                    <h1>Торговые точки</h1>
-                </div>
-                <div class="page__body">
+            <div class="page__body">
+                <div class="content">
                     <div class="content">
                         <div class="content__action">
                             <a href="shops-add.html" class="btn">Добавить</a>
+
+
+                            <div class="content__action__search">
+                                <input placeholder="Поиск">
+                                <svg>
+                                    <use xlink:href="#svg-search"/>
+                                </svg>
+                            </div>
+
                         </div>
                         <div class="content__widget-grid">
                             <div class="widget-grid">
 
                                 <div class="widget-grid__header is-shops">
                                     <div></div>
-                                    <div>Название</div>
                                     <div>Партнер</div>
+                                    <div>Адрес</div>
+                                    <div>Идентификатор</div>
                                 </div>
                                 <div class="widget-grid__body">
 
                                     <a href="#" class="widget-item is-shops">
                                         <div class="widget-item__icon">
                                             <svg class="widget-item__icon-svg">
-                                                <use xlink:href="#svg-bag" />
+                                                <use xlink:href="#svg-bag"/>
                                             </svg>
                                         </div>
-                                        <div class="widget-item__title">Название партнера</div>
-                                        <div class="widget-item__description">Партнер</div>
+                                        <div class="widget-item__title">Nike</div>
+                                        <div class="widget-item__description">Екатеринбург, ул Вайнера 9 3 этаж</div>
+                                        <div class="widget-item__description">cf69f4bf-f9d3-4546-9524-19b4bacfe177</div>
                                     </a>
-
                                     <a href="#" class="widget-item is-shops">
                                         <div class="widget-item__icon">
                                             <svg class="widget-item__icon-svg">
-                                                <use xlink:href="#svg-bag" />
+                                                <use xlink:href="#svg-bag"/>
                                             </svg>
                                         </div>
-                                        <div class="widget-item__title">Название партнера</div>
-                                        <div class="widget-item__description">Партнер</div>
+                                        <div class="widget-item__title">Nike</div>
+                                        <div class="widget-item__description">Екатеринбург, ул Вайнера 9 3 этаж</div>
+                                        <div class="widget-item__description">cf69f4bf-f9d3-4546-9524-19b4bacfe177</div>
                                     </a>
+                                    <a href="#" class="widget-item is-shops">
+                                        <div class="widget-item__icon">
+                                            <svg class="widget-item__icon-svg">
+                                                <use xlink:href="#svg-bag"/>
+                                            </svg>
+                                        </div>
+                                        <div class="widget-item__title">Nike</div>
+                                        <div class="widget-item__description">Екатеринбург, ул Вайнера 9 3 этаж</div>
+                                        <div class="widget-item__description">cf69f4bf-f9d3-4546-9524-19b4bacfe177</div>
+                                    </a>  <a href="#" class="widget-item is-shops">
+                                        <div class="widget-item__icon">
+                                            <svg class="widget-item__icon-svg">
+                                                <use xlink:href="#svg-bag"/>
+                                            </svg>
+                                        </div>
+                                        <div class="widget-item__title">Nike</div>
+                                        <div class="widget-item__description">Екатеринбург, ул Вайнера 9 3 этаж</div>
+                                        <div class="widget-item__description">cf69f4bf-f9d3-4546-9524-19b4bacfe177</div>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -113,8 +145,8 @@
 
             </div>
 
-        </section>
+    </section>
 
-    </div>
+</div>
 </body>
 </html>
